@@ -1,18 +1,22 @@
-import BottomNav from '../components/BottomNav'; // Add this 
+import React from 'react';
+import Header from '../components/Header';
+import FilterBar from '../components/FilterBar';
+import VideoPlayer from '../components/VideoPlayer';
+import Socials from '../components/Socials';
+import BottomNav from '../components/BottomNav';
 
 const Home = () => {
   return (
     <div className="container-fluid p-0">
       <Header />
       <FilterBar />
-      <div className="px-3 pb-5"> {/* Added padding at bottom */}
+      <div className="px-3">
         <VideoPlayer />
-        <ActionButtons />
-        <h5 className="mt-4">SOCIALS</h5>
         <Socials />
+        <BottomNav />
       </div>
-      <BottomNav /> {/* New Bottom Navigation */}
     </div>
   );
 };
 
+export default Home;

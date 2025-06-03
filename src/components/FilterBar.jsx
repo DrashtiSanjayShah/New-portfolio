@@ -1,12 +1,20 @@
-import React from "react";
-import { Nav } from "react-bootstrap";
-import { FaHome, FaBook, FaFileAlt, FaEllipsisH } from "react-icons/fa";
-// import "./FilterBar.css";
+import React from 'react';
+import { Button } from 'react-bootstrap';
 
-const FilterBar = () => {
-  return (
-    <h1>Hi this is FilterBar</h1>
-  );
-};
+const categories = ['All', 'Resume', 'Must watch YT videos','MyFav Projects', 'Linkedin','GitHub', 'Certifications', 'Resources', 'My Fav YT channels'];
+
+const FilterBar = () => (
+  <div className="filter-bar">
+    {categories.map((cat, idx) => (
+      <Button
+        key={idx}
+        variant="secondary" // You can change variant or keep custom colors from CSS
+        className="rounded-pill"
+      >
+        {cat}
+      </Button>
+    ))}
+  </div>
+);
 
 export default FilterBar;

@@ -1,6 +1,6 @@
 import React from "react";
 import { Nav } from "react-bootstrap";
-import { FaHome, FaBook, FaFileAlt, FaEllipsisH } from "react-icons/fa";
+import { FaHome, FaMedal, FaFileAlt, FaUser, FaEnvelope } from "react-icons/fa";
 import "./BottomNav.css";
 
 const BottomNav = () => {
@@ -14,10 +14,14 @@ const BottomNav = () => {
       </Nav.Item>
       <Nav.Item>
         <Nav.Link href="#" className="text-center">
-          <FaBook size={20} />
-          <div className="label">Resources</div>
+          <FaMedal size={20} />
+          <div className="label">Achievments</div>
         </Nav.Link>
       </Nav.Item>
+       <Nav.Link href="#" className="text-center">
+          <FaEnvelope size={20} />
+          <div className="label">Contact</div>
+        </Nav.Link>
       <Nav.Item>
         <Nav.Link href="#" className="text-center">
           <FaFileAlt size={20} />
@@ -26,7 +30,7 @@ const BottomNav = () => {
       </Nav.Item>
       <Nav.Item>
         <Nav.Link href="#" className="text-center">
-          <FaEllipsisH size={20} />
+          <FaUser size={20} />
           <div className="label">More</div>
         </Nav.Link>
       </Nav.Item>

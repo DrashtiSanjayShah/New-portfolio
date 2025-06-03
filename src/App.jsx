@@ -1,21 +1,12 @@
-import { useState } from "react";
-// import Home from './pages/Home'
-import Header from "./components/Header";
-import VideoPlayer from "./components/VideoPlayer";
-import FilterBar from "./components/FilterBar";
-import Socials from "./components/Socials";
-import BottomNav from "./components/BottomNav";
-import "./App.css";
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
 
 function App() {
   return (
-    <>
-      <Header />
-      <FilterBar />
-      <Socials />
-      <VideoPlayer />
-      <BottomNav />
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+    </Routes>
   );
 }
 
