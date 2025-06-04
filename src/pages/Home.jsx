@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import FilterBar from '../components/FilterBar';
 import VideoPlayer from '../components/VideoPlayer';
-import Socials from '../components/Socials';
+import Videos from '../components/Videos';
 import BottomNav from '../components/BottomNav';
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
       <FilterBar />
       <div className="px-3">
         <VideoPlayer />
-        <Socials />
+        <Videos />
         <BottomNav />
       </div>
     </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { FaYoutube, FaInstagram } from "react-icons/fa";
 import { Button } from "react-bootstrap";
+import videoPlaceholder from '../assets/images/video-placeholder.png';
 
 const VideoPlayer = () => {
   return (
@@ -15,7 +16,7 @@ const VideoPlayer = () => {
       {/* Left side */}
       <div style={{ display: "flex", alignItems: "center" }}>
         <img
-          src="src/assets/images/video-placeholder.png"
+          src={videoPlaceholder}
           className="small-thumbnail rounded border bg-light padding: '0.5rem 1rem'"
         />
       </div>
