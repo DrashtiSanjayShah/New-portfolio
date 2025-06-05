@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaBars, FaBell, FaSearch } from 'react-icons/fa';
-
+import { CiSearch, CiBellOn } from "react-icons/ci";
 const Header = () => {
   return (
     <div style={{
@@ -18,16 +18,16 @@ const Header = () => {
 
         {/* Left side */}
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          <FaBars style={{ color: 'white', marginRight: '10px' }} />
-          <span style={{ color: 'white', fontWeight: 'bold', fontSize: '1.25rem' }}>
+          {/* <FaBars style={{ color: 'white', marginRight: '10px' }} /> */}
+          <span style={{ color: 'white', fontSize: '1.25rem' }}>
             Drashti Shah
           </span>
         </div>
 
         {/* Right side */}
         <div style={{ display: 'flex', gap: '20px', alignItems: 'center', marginRight: '0' }}>
-          <FaBell style={{ color: 'white', fontSize: '20px', fontWeight: 'light' }} />
-          <FaSearch style={{ color: 'white', fontSize: '20px' }} />
+          <CiBellOn style={{ color: 'white', fontSize: '24px',  }} />
+          <CiSearch style={{ color: 'white', fontSize: '24px' }} />
         </div>
       </div>
     </div>

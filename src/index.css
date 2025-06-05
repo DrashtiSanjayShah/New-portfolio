@@ -9,7 +9,7 @@ body {
 .navbar {
   background-color: #0f0f0f;
   /* border-bottom: 1px solid #272727; */
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 1rem;
 }
 
 .navbar-brand {
@@ -34,15 +34,14 @@ body {
   color: white;
 } */
 
-/* Filter bar */
+
 /* Filter bar */
 .filter-bar {
   display: flex;
-  overflow-x: auto;
-  gap: 0.5rem; /* gap between buttons */
+  gap: -0.75rem; /* gap between buttons */
   background-color: #0f0f0f; /* Dark background matching your theme */
-  justify-content: center; /* Center align buttons horizontally */
-  align-items: center;
+  /* justify-content: center; Center align buttons horizontally */
+  text-align: center;
 }
 
 .filter-bar::-webkit-scrollbar {
@@ -55,12 +54,14 @@ body {
   color: white;
   border-radius: 8px; /* Rounded edges */
   font-size: 1rem; /* Larger font size */
-  padding: 0.5rem 1rem; /* Vertical and horizontal padding */
+  padding: 0 1rem; 
   border: none;
   cursor: pointer;
   height: 2rem;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  margin-left: 1rem;
 }
 
 /* .filter-bar {
@@ -95,10 +96,18 @@ body {
   border-radius: 8px;
 }
 
+.videos{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 2rem;
+  margin: 1rem;
+}
+
 .video-small-thumbnail {
   display: flex;
   width: 420px;
-  height: 240px;
+  height: 250px;
   border-radius: 8px;
   object-fit: cover;
 }

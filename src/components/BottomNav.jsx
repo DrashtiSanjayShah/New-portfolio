@@ -1,6 +1,9 @@
 import React from "react";
 import { Nav } from "react-bootstrap";
-import { FaHome, FaMedal, FaFileAlt, FaUser, FaEnvelope } from "react-icons/fa";
+import { FaFileAlt, FaUser } from "react-icons/fa";
+import { MdHome } from "react-icons/md";
+import { GiTrophy } from "react-icons/gi";
+import { FaEnvelopeOpenText } from "react-icons/fa";
 import "./BottomNav.css";
 
 const BottomNav = () => {
@@ -8,29 +11,29 @@ const BottomNav = () => {
     <Nav className="bottom-nav d-flex justify-content-around align-items-center">
       <Nav.Item>
         <Nav.Link href="#" className="text-center">
-          <FaHome size={20} />
+          <MdHome size={24} />
           <div className="label">Home</div>
         </Nav.Link>
       </Nav.Item>
       <Nav.Item>
         <Nav.Link href="#" className="text-center">
-          <FaMedal size={20} />
+          <GiTrophy size={24} />
           <div className="label">Achievments</div>
         </Nav.Link>
       </Nav.Item>
        <Nav.Link href="#" className="text-center">
-          <FaEnvelope size={20} />
+          <FaEnvelopeOpenText size={24} />
           <div className="label">Contact</div>
         </Nav.Link>
       <Nav.Item>
         <Nav.Link href="#" className="text-center">
-          <FaFileAlt size={20} />
+          <FaFileAlt size={24} />
           <div className="label">Resume</div>
         </Nav.Link>
       </Nav.Item>
       <Nav.Item>
         <Nav.Link href="#" className="text-center">
-          <FaUser size={20} />
+          <FaUser size={24} />
           <div className="label">More</div>
         </Nav.Link>
       </Nav.Item>

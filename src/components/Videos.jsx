@@ -19,8 +19,7 @@ const Videos = () => {
 
   return (
     <Container
-      className="py-4"
-      style={{ display: "flex", gap: "1rem", margin: "1rem" }}
+      className="videos"
     >
       {rows.map((rowItems, rowIndex) => (
         <Row key={rowIndex} className="mb-4">
@@ -32,11 +31,14 @@ const Videos = () => {
                   src={videoPlaceholder}
                   className="video-small-thumbnail img-fluid rounded"
                 />
-                <Card.Body >
-                  <Card.Title style={{ fontSize: "1rem", marginTop:'1rem' }}>
+                <Card.Body>
+                  <div style={{display: 'flex'}}>
+                  <img classname="icon" src={videoPlaceholder} style={{ width: "3rem", height: "3rem", marginTop: "1rem", borderRadius: '5rem'}}/>
+                  <Card.Title style={{ fontSize: "14px", margin:'1.5rem 0 0 1rem' }}>
                     {item.title}
                   </Card.Title>
-                  <Card.Text style={{ fontSize: "0.75rem", color: "#ccc", marginTop: '0.5rem', marginBottom: '3rem' }}>
+                  </div>
+                  <Card.Text style={{ fontSize: "0.75rem", color: "#ccc", marginTop: '0.5rem', margin: '-1rem 3rem 2rem 4rem', paddingBottom: '2rem' }}>
                    {item.creator} . {item.views} . {item.time}
                   </Card.Text>
                 </Card.Body>
