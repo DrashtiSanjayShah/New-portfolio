@@ -23,15 +23,7 @@ const VideoPlayer = () => {
         <FaInstagram className='icon' />
         <FaYoutube className='icon' />
       </div>
-      <div
-        style={{
-          display: "flex",
-          gap: "20px",
-          alignItems: "center",
-          marginLeft: '-15rem',
-          paddingTop: '4rem',
-          
-        }}
+      <div className="mobile-buttons"
       >
         <Button variant="outline-dark">DOWNLOAD RESUME</Button>
         <Button variant="outline-dark">RESOURCES</Button>
