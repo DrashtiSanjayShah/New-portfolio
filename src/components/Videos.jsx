@@ -57,7 +57,7 @@ const Videos = () => {
               <Card className="h-100 border-0 bg-dark text-light">
                 <Card.Img
                   variant="top"
-                  src={videoPlaceholder}
+                  src={videoPlaceholder} 
                   className="video-small-thumbnail img-fluid rounded"
                 />
                 <Card.Body>
