@@ -8,7 +8,7 @@ const FilterBar = () => (
     {categories.map((cat, idx) => (
       <Button
         key={idx}
-        variant="secondary" // You can change variant or keep custom colors from CSS
+        variant="secondary"
         className="rounded-pill"
       >
         {cat}

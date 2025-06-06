@@ -5,13 +5,7 @@ import videoPlaceholder from '../assets/images/video-placeholder.png';
 
 const VideoPlayer = () => {
   return (
-    <div
-      style={{
-        backgroundColor: "#0f0f0f",
-        padding: "1rem",
-        display: "flex",
-        borderBottom: "1px solid #3a3a3a" // grey line at the bottom
-      }}
+    <div className="videoPlayer-container"
     >
       {/* Left side */}
       <div style={{ display: "flex", alignItems: "center" }}>
@@ -22,12 +16,12 @@ const VideoPlayer = () => {
       </div>
 
       {/* Right side */}
-      <div style={{ paddingLeft: '2rem', gap: '30px' }}>
+      <div className="right-side-video">
         <h5>Introduction Video</h5>
         <p> this is a video about 'me' - Drashti</p>
 
-        <FaInstagram style={{ color: "white", fontSize: "20px" }} />
-        <FaYoutube style={{ color: "white", fontSize: "20px" }} />
+        <FaInstagram className='icon' />
+        <FaYoutube className='icon' />
       </div>
       <div
         style={{
