@@ -5,13 +5,24 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.page-container {
+  min-height: 100vh; /* Full screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content-wrap {
+  padding-bottom: 60px; /* Same height as your bottom nav */
+}
+
 .header {
   display: flex;
   height: 40px;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
-  padding-top: 0.5rem;
+  margin: 0.5rem 1rem;
 }
 
 .right-icon {
@@ -66,8 +77,17 @@ body {
   align-items: center;
   margin-left: -15rem;
   padding-top: 4rem;
+  font-size: 2rem;
 }
 
+.video-button {
+  font-size: 0.75rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  background-color: #393939;
+  color: skyblue;
+  border: none;
+}
 .videos {
   align-items: center;
   justify-content: center;
@@ -78,8 +98,8 @@ body {
 
 .video-small-thumbnail {
   display: flex;
-  width: 420px;
-  height: 250px;
+  width: 440px;
+  height: 220px;
   border-radius: 8px;
   object-fit: cover;
 }
@@ -102,6 +122,7 @@ body {
   height: 3rem;
   margin-top: 1rem;
   border-radius: 5rem;
+  object-fit: cover;
 }
 .video-title {
   font-size: 14px;
@@ -122,12 +143,17 @@ body {
     justify-content: space-between;
     padding: 0.75rem 1rem;
     font-size: 1.25rem;
+    margin-bottom: 1rem;
   }
 
   .right-icon {
     gap: 1rem;
   }
 
+.icon{
+  font-size: 32px;
+
+}
   /* Adjust video layout for mobile */
   .videos {
     flex-direction: column;
@@ -155,6 +181,14 @@ body {
     margin-top: 1rem;
   }
 
+  .mobile-buttons {
+    margin: -2rem 0;
+  }
+
+  .video-button {
+    font-size: 0.85rem;
+  }
+
   .right-side-video h5 {
     font-size: 1.5rem;
     margin: 0;
@@ -168,15 +202,6 @@ body {
     width: 100%;
     height: auto;
     max-width: 100%;
-  }
-
-  .mobile-buttons {
-    gap: 0.5rem;
-    margin-top: 1rem;
-    align-items: center;
-    padding: 1rem;
-    margin-left: 0;
-    font-size: 2rem !important;
   }
 
   .video-details {

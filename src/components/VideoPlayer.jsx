@@ -1,12 +1,11 @@
 import React from "react";
 import { FaYoutube, FaInstagram } from "react-icons/fa";
 import { Button } from "react-bootstrap";
-import videoPlaceholder from '../assets/images/video-placeholder.png';
+import videoPlaceholder from "../assets/images/video-placeholder.png";
 
 const VideoPlayer = () => {
   return (
-    <div className="videoPlayer-container"
-    >
+    <div className="videoPlayer-container">
       {/* Left side */}
       <div style={{ display: "flex", alignItems: "center" }}>
         <img
@@ -20,13 +19,12 @@ const VideoPlayer = () => {
         <h5>Introduction Video</h5>
         <p> this is a video about 'me' - Drashti</p>
 
-        <FaInstagram className='icon' />
-        <FaYoutube className='icon' />
+        <FaInstagram className="icon" />
+        <FaYoutube className="icon" />
       </div>
-      <div className="mobile-buttons"
-      >
-        <Button variant="outline-dark">DOWNLOAD RESUME</Button>
-        <Button variant="outline-dark">RESOURCES</Button>
+      <div className="button mobile-buttons">
+        <Button variant="outline-dark" className='video-button' >DOWNLOAD RESUME</Button>
+        <Button variant="outline-dark" className='video-button' >RESOURCES</Button>
       </div>
     </div>
   );

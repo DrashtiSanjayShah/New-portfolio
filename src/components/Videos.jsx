@@ -1,43 +1,44 @@
 import React from "react";
 import { Card, Row, Col, Container } from "react-bootstrap";
 import videoPlaceholder from "../assets/images/video-placeholder.png";
+import channelPhoto from "../assets/images/drashti-photo.png";
 
 const dummyData = [
   {
     creator: "That One Girl in B.Tech",
-    title: "TIPS FOR YOUR 20...",
-    views: "1 View",
-    time: "2 days ago",
+    title: "Making a FREE PORTFOLIO for my FOLLOWER",
+    views: "131 Views",
+    time: "4 months ago",
   },
   {
     creator: "That One Girl in B.Tech",
-    title: "AI’s “Moore’s Law??”",
-    views: "120 Views",
-    time: "5 hours ago",
+    title: "Teaching Web Design | I became a Teacher",
+    views: "78 Views",
+    time: "1 year ago",
   },
   {
     creator: "That One Girl in B.Tech",
-    title: "Why We Need Sleep",
-    views: "88 Views",
-    time: "1 week ago",
+    title: "HOW TO: PLACEMENT EP 1| RESOURCES TO PREPARE FOR YOUR CAMPUS PLACEMENT ",
+    views: "393 Views",
+    time: "5 months ago",
   },
   {
     creator: "That One Girl in B.Tech",
-    title: "How I Learn Fast",
-    views: "300 Views",
-    time: "3 days ago",
+    title: "Watch this before your NEXT EXAM",
+    views: "100 Views",
+    time: "1 year ago",
   },
   {
     creator: "That One Girl in B.Tech",
-    title: "React Basics 101",
-    views: "40 Views",
-    time: "1 day ago",
+    title: "if you are in your early 20s, you need to hear this",
+    views: "421 Views",
+    time: "8 months ago",
   },
   {
     creator: "That One Girl in B.Tech",
-    title: "College Life Vlog",
-    views: "550 Views",
-    time: "2 weeks ago",
+    title: "A Friday in life of a Corporate girlie💻| making Ganesha Idol🌸",
+    views: "140 Views",
+    time: "6 months ago",
   },
 ];
 
@@ -61,7 +62,7 @@ const Videos = () => {
                 />
                 <Card.Body>
                   <div style={{ display: "flex" }}>
-                    <img className="channel-photo" src={videoPlaceholder} />
+                    <img className="channel-photo" src={channelPhoto} />
                     <Card.Title className="video-title">
                       {item.title}
                     </Card.Title>

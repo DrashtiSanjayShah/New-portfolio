@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 
-const categories = ['All', 'Resume', 'Must watch YT videos','MyFav Projects', 'Linkedin','GitHub', 'Certifications', 'Resources', 'My Fav YT channels'];
+const categories = ['Resume', 'Freelace Work', 'Games','Linkedin','GitHub', 'Certifications', 'Resources', 'My Fav YT channels', 'Project Recommendations'];
 
 const FilterBar = () => (
   <div className="filter-bar">
