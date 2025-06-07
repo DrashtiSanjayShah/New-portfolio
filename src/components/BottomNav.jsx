@@ -30,7 +30,7 @@ const BottomNav = () => {
         <FaFileAlt className="icon" />
         <div className="label">Resume</div>
       </a>
-      <Link to="/more" className="nav-link">
+      <Link to="/profile" className="nav-link">
         <FaUser className="icon" />
         <div className="label">Drashti</div>
       </Link>
