@@ -1,6 +1,8 @@
 import React from "react";
 import { FaYoutube, FaInstagram } from "react-icons/fa";
 import { Button } from "react-bootstrap";
+import { Link } from 'react-router-dom';
+import Resume from '../assets/Resume.pdf'; 
 import videoPlaceholder from "../assets/images/video-placeholder.png";
 
 const VideoPlayer = () => {
@@ -18,12 +20,32 @@ const VideoPlayer = () => {
       <div className="right-side-video">
         <h5>Introduction Video</h5>
         <p> this is a video about 'me' - Drashti</p>
-
-        <FaInstagram className="icon" />
+<div className="social-icons">
+   <a
+    href="https://www.instagram.com/thatonegirlinb.tech/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+  <FaInstagram className="icon" />
+  </a>
+   <a
+    href="https://www.youtube.com/@thatonegirlinbtech"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
         <FaYoutube className="icon" />
+        </a>
+</div>
+        
       </div>
       <div className="button mobile-buttons">
-        <Button variant="outline-dark" className='video-button' >DOWNLOAD RESUME</Button>
+       <a
+  href={Resume}
+  download
+  className="video-button"
+>
+  DOWNLOAD RESUME
+</a>
         <Button variant="outline-dark" className='video-button' >RESOURCES</Button>
       </div>
     </div>

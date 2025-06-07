@@ -79,6 +79,7 @@ body {
   margin: 2rem -15rem 0;
   padding-top: 4rem;
   font-size: 2rem;
+  cursor: pointer;
 }
 
 .video-button {
@@ -88,6 +89,8 @@ body {
   background-color: #393939;
   color: skyblue;
   border: none;
+  text-decoration: none;
+  cursor: pointer;
 }
 .videos {
   align-items: center;
@@ -113,27 +116,48 @@ body {
 .right-side-video p {
   color: grey;
 }
+
+.social-icons {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 1rem;
+  z-index: 2; /* ensure they stay on top */
+  position: relative; /* needed if z-index is set */
+}
+
 .icon {
   color: white;
   font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.card{
+  cursor: pointer;
 }
 
 .channel-photo {
-  width: 3rem;
-  height: 3rem;
-  margin-top: 1rem;
-  border-radius: 5rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
   object-fit: cover;
+  flex-shrink: 0;
+  margin-top: 1rem;
 }
+
 .video-title {
   font-size: 14px;
-  margin: 1.5rem 0 0 1rem;
+  margin: 1rem;
+  line-height: 1.3;
+  white-space: normal;
+  word-break: break-word;
 }
+
 .video-details {
   font-size: 0.75rem;
-  margin-top: 0.5rem;
-  margin: -1rem 3rem 2rem 4rem;
-  padding-bottom: 2rem;
+  margin: -.5rem 3rem ;
+  padding-bottom: 4rem;
   color: grey;
 }
 

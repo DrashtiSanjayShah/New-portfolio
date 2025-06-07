@@ -1,8 +1,10 @@
 import React from "react";
+import BottomNav from '../components/BottomNav';
 import "./ContactForm.css";
 
 const ContactForm = () => {
   return (
+    <>
     <div className="contact-form-container">
       <h2>Contact Me</h2>
       <form className="contact-form">
@@ -12,7 +14,10 @@ const ContactForm = () => {
         <button type="submit">Send Message</button>
       </form>
     </div>
+    <BottomNav />
+    </>
   );
+  
 };
 
 export default ContactForm;
