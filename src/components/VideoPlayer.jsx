@@ -46,7 +46,9 @@ const VideoPlayer = () => {
 >
   DOWNLOAD RESUME
 </a>
+<a href='https://drive.google.com/file/d/1KY67ETEZ1-jeAA7KhY6bwu6KXPLyfvAL/view?usp=share_link' target="_blank">
         <Button variant="outline-dark" className='video-button' >RESOURCES</Button>
+        </a>
       </div>
     </div>
   );

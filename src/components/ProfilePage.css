@@ -1,88 +1,90 @@
-.profile-page {
-  display: flex;
-  flex-direction: row;
+.profile-page-container {
+  padding-left: 2rem;
+  font-family: "Roboto", sans-serif;
   background-color: #0f0f0f;
   color: white;
-  padding: 2rem;
-  min-height: 100vh;
-  font-family: "Roboto", sans-serif;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.left-section {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: -5rem;
+  gap: 3rem;
 }
 
-.creator-image {
-  width: 25rem;
-  height: 25rem;
-  aspect-ratio: 1 / 1;
+/* Top Section (split left & right) */
+.top-section {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+.top-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image {
+  width: 16rem;
+  height: 16rem;
   border-radius: 50%;
   object-fit: cover;
-  object-position: top center; 
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
-.intro-text {
+.top-right {
+  flex: 2;
+}
+
+.name {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.details p{
+  color: grey;
+}
+
+.location,
+.email {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 0.25rem;
+}
+
+.description {
   margin-top: 1rem;
-  font-size: 1.5rem;
-  text-align: center;
-  color: #06cd86;
+  line-height: 1.6;
 }
 
-.right-section {
-  flex: 1;
-  padding: 1rem 2rem;
+/* Bottom Section */
+.bottom-section{
+  margin-top: -2rem;
 }
 
 .section-title {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #06cd86;
+  font-size: 1.5rem;
 }
 
 .qualification-list {
-  list-style-type: none;
-  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
 }
 
 .qualification-item {
-  background-color: #1a1a1a;
-  margin-bottom: 1rem;
+  background-color: #1c1c1c;
   padding: 1rem;
-  border-radius: 0.75rem;
-  color: #e0e0e0;
+  border-radius: 12px;
+  
   font-size: 1rem;
-  box-shadow: 0 0 10px rgba(6, 205, 134, 0.2);
+  color: #e0e0e0;
+  border: 1px solid #2a2a2a;
+  transition: background-color 0.3s ease;
 }
 
-/* Responsive View */
-@media (max-width: 768px) {
-  .profile-page {
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-  }
-
-  .left-section,
-  .right-section {
-    width: 100%;
-    text-align: center;
-    padding: 0;
-    margin-top: 0;
-  }
-
-  .creator-image {
-    width: 20rem;
-    height: 20rem;
-    max-width: 100%;
-    margin-top: 3rem;
-  }
-
+.qualification-item:hover {
+  background-color: #2a2a2a;
 }

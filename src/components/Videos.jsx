@@ -20,15 +20,7 @@ const dummyData = [
     views: "78 Views",
     time: "1 year ago",
   },
-  {
-    id: "W0EZDgKWEwQ",
-    thumbnail: "https://img.youtube.com/vi/W0EZDgKWEwQ/hqdefault.jpg",
-    creator: "That One Girl in B.Tech",
-    title:
-      "HOW TO: PLACEMENT EP 1 | RESOURCES TO PREPARE FOR YOUR CAMPUS PLACEMENT",
-    views: "393 Views",
-    time: "5 months ago",
-  },
+
   {
     id: "Vn6kGqEWukw",
     thumbnail: "https://img.youtube.com/vi/Vn6kGqEWukw/hqdefault.jpg",
@@ -36,6 +28,15 @@ const dummyData = [
     title: "Watch this before your NEXT EXAM",
     views: "100 Views",
     time: "1 year ago",
+  },
+    {
+    id: "W0EZDgKWEwQ",
+    thumbnail: "https://img.youtube.com/vi/W0EZDgKWEwQ/hqdefault.jpg",
+    creator: "That One Girl in B.Tech",
+    title:
+      "HOW TO: PLACEMENT EP 1 | RESOURCES TO PREPARE FOR YOUR CAMPUS PLACEMENT",
+    views: "393 Views",
+    time: "5 months ago",
   },
   {
     id: "B_O4vE5Uff4",
