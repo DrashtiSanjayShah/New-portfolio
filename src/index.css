@@ -196,6 +196,10 @@ body {
     height: auto;
   }
 
+.card-body{
+  margin: -2rem 0;
+}
+
   .filter-bar {
     overflow-x: auto;
     flex-wrap: nowrap;
@@ -235,7 +239,7 @@ body {
   }
 
   .video-details {
-    margin-top: 0.25px;
+    margin-top: 1.5rem;
     font-size: 1rem;
   }
   .video-title {
