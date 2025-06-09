@@ -12,6 +12,14 @@ const dummyData = [
     views: "131 Views",
     time: "4 months ago",
   },
+   {
+    id: "rDGo6utuRis",
+    thumbnail: "https://img.youtube.com/vi/rDGo6utuRis/hqdefault.jpg",
+    creator: "That One Girl in B.Tech",
+    title: "A Friday in life of a Corporate girlie💻 | making Ganesha Idol🌸",
+    views: "140 Views",
+    time: "6 months ago",
+  },
   {
     id: "xayj150NLrU",
     thumbnail: "https://img.youtube.com/vi/xayj150NLrU/hqdefault.jpg",
@@ -29,15 +37,7 @@ const dummyData = [
     views: "100 Views",
     time: "1 year ago",
   },
-    {
-    id: "W0EZDgKWEwQ",
-    thumbnail: "https://img.youtube.com/vi/W0EZDgKWEwQ/hqdefault.jpg",
-    creator: "That One Girl in B.Tech",
-    title:
-      "HOW TO: PLACEMENT EP 1 | RESOURCES TO PREPARE FOR YOUR CAMPUS PLACEMENT",
-    views: "393 Views",
-    time: "5 months ago",
-  },
+    
   {
     id: "B_O4vE5Uff4",
     thumbnail: "https://img.youtube.com/vi/B_O4vE5Uff4/hqdefault.jpg",
@@ -47,13 +47,15 @@ const dummyData = [
     time: "8 months ago",
   },
   {
-    id: "rDGo6utuRis",
-    thumbnail: "https://img.youtube.com/vi/rDGo6utuRis/hqdefault.jpg",
+    id: "W0EZDgKWEwQ",
+    thumbnail: "https://img.youtube.com/vi/W0EZDgKWEwQ/hqdefault.jpg",
     creator: "That One Girl in B.Tech",
-    title: "A Friday in life of a Corporate girlie💻 | making Ganesha Idol🌸",
-    views: "140 Views",
-    time: "6 months ago",
+    title:
+      "HOW TO: PLACEMENT EP 1 | RESOURCES TO PREPARE FOR YOUR CAMPUS PLACEMENT",
+    views: "393 Views",
+    time: "5 months ago",
   },
+ 
 ];
 
 const Videos = () => {

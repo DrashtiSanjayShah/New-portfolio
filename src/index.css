@@ -143,6 +143,32 @@ body {
   cursor: pointer;
 }
 
+.achievement-card {
+  height: 220px;
+  margin: 0.5rem 0;
+}
+
+.achievement-img {
+  width: 400px;
+  height: 240px;
+  border-radius: 8px;
+  object-fit: cover;
+  border-radius: 8px 0 0 8px;
+}
+
+@media (max-width: 768px) {
+  .achievement-card {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .achievement-img {
+    width: 240px;
+    height: 180px;
+    border-radius: 8px 8px 0 0;
+  }
+}
+
 .channel-photo {
   width: 2rem;
   height: 2rem;

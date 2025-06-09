@@ -1,8 +1,8 @@
 import React from "react";
 import { FaYoutube, FaInstagram } from "react-icons/fa";
 import { Button } from "react-bootstrap";
-import { Link } from 'react-router-dom';
-import Resume from '../assets/Resume.pdf'; 
+import { Link } from "react-router-dom";
+import Resume from "../assets/Resume.pdf";
 import videoPlaceholder from "../assets/images/video-placeholder.png";
 
 const VideoPlayer = () => {
@@ -20,34 +20,33 @@ const VideoPlayer = () => {
       <div className="right-side-video">
         <h5>Introduction Video</h5>
         <p> this is a video about 'me' - Drashti</p>
-<div className="social-icons">
-   <a
-    href="https://www.instagram.com/thatonegirlinb.tech/"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-  <FaInstagram className="icon" />
-  </a>
-   <a
-    href="https://www.youtube.com/@thatonegirlinbtech"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-        <FaYoutube className="icon" />
-        </a>
-</div>
-        
+        <div className="social-icons">
+          <a
+            href="https://www.instagram.com/thatonegirlinb.tech/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram className="icon" />
+          </a>
+          <a
+            href="https://www.youtube.com/@thatonegirlinbtech"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaYoutube className="icon" />
+          </a>
+        </div>
       </div>
       <div className="button mobile-buttons">
-       <a
-  href={Resume}
-  download
-  className="video-button"
->
-  DOWNLOAD RESUME
-</a>
-<a href='https://drive.google.com/file/d/1KY67ETEZ1-jeAA7KhY6bwu6KXPLyfvAL/view?usp=share_link' target="_blank">
-        <Button variant="outline-dark" className='video-button' >RESOURCES</Button>
+        <a href={Resume} download className="video-button">
+          DOWNLOAD RESUME
+        </a>
+        <a
+          href="https://drive.google.com/file/d/1KY67ETEZ1-jeAA7KhY6bwu6KXPLyfvAL/view?usp=share_link"
+          className="video-button"
+          target="_blank"
+        >
+          RESOURCES
         </a>
       </div>
     </div>

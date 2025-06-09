@@ -16,6 +16,7 @@
   align-items: center;
   flex-wrap: wrap;
   border-bottom: 1px solid #3a3a3a;
+  padding-bottom: 2rem;
 }
 
 .top-left {
@@ -29,6 +30,7 @@
   height: 16rem;
   border-radius: 50%;
   object-fit: cover;
+   object-position: center top;
 }
 
 .top-right {
