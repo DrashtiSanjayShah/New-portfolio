@@ -6,7 +6,8 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-
+src/assets/images/video1.mp4
+src/assets/images/video.mp4
 node_modules
 dist
 dist-ssr
