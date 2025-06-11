@@ -1,25 +1,53 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaYoutube, FaInstagram } from "react-icons/fa";
-import { Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import Resume from "../assets/Resume.pdf";
-import videoPlaceholder from "../assets/images/video-placeholder.png";
+import videoPlaceholder from "../assets/images/video1.mp4";
+// import './video.css';
 
 const VideoPlayer = () => {
+useEffect(() => {
+  const handleFullscreenChange = () => {
+    if (!document.fullscreenElement) {
+      // Delay just enough to allow the browser to exit fullscreen
+      setTimeout(() => {
+        const container = document.querySelector(".videoPlayer-container");
+        if (container) {
+          // Force reflow
+          container.style.display = "none";
+          void container.offsetHeight; // Trigger reflow
+          container.style.display = "flex";
+        }
+      }, 100);
+    }
+  };
+
+  document.addEventListener("fullscreenchange", handleFullscreenChange);
+  return () => {
+    document.removeEventListener("fullscreenchange", handleFullscreenChange);
+  };
+}, []);
+
+
   return (
     <div className="videoPlayer-container">
       {/* Left side */}
       <div style={{ display: "flex", alignItems: "center" }}>
-        <img
+        <a href='/fullvideo'
+        >
+        <video
           src={videoPlaceholder}
-          className="small-thumbnail rounded border bg-light padding: '0.5rem 1rem'"
+          controls
+          autoPlay
+          muted
+          className="small-thumbnail rounded border bg-light"
         />
+        </a>
       </div>
 
       {/* Right side */}
       <div className="right-side-video">
         <h5>Introduction Video</h5>
-        <p> this is a video about 'me' - Drashti</p>
+        <p>this is a video about 'me' – Drashti</p>
         <div className="social-icons">
           <a
             href="https://www.instagram.com/thatonegirlinb.tech/"
@@ -37,6 +65,7 @@ const VideoPlayer = () => {
           </a>
         </div>
       </div>
+
       <div className="button mobile-buttons">
         <a href={Resume} download className="video-button">
           DOWNLOAD RESUME
