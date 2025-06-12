@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Header from './Header';
 import BottomNav from "./BottomNav";
-import "./ContactForm.css";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({

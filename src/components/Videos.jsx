@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import { Card, Row, Col, Container } from "react-bootstrap";
-import videoPlaceholder from "../assets/images/video-placeholder.png";
+import heetWebsite from "../assets/images/heetwebsite.png";
+import friday from "../assets/images/friday.png";
+import youneedtohearthis from "../assets/images/youneedtohearthis.png";
+import placement from "../assets/images/placement.png";
+// import heetWebsite from "../assets/images/heetwebsite.png";
 import channelPhoto from "../assets/images/drashti-photo.png";
 
 const dummyData = [
   {
     id: "5oUG8TwOv9c",
-    thumbnail: "https://img.youtube.com/vi/5oUG8TwOv9c/hqdefault.jpg",
+    thumbnail: heetWebsite,
     creator: "That One Girl in B.Tech",
     title: "Making a FREE PORTFOLIO for my FOLLOWER",
     views: "131 Views",
@@ -14,7 +18,7 @@ const dummyData = [
   },
    {
     id: "rDGo6utuRis",
-    thumbnail: "https://img.youtube.com/vi/rDGo6utuRis/hqdefault.jpg",
+    thumbnail: friday,
     creator: "That One Girl in B.Tech",
     title: "A Friday in life of a Corporate girlie💻 | making Ganesha Idol🌸",
     views: "140 Views",
@@ -40,7 +44,7 @@ const dummyData = [
     
   {
     id: "B_O4vE5Uff4",
-    thumbnail: "https://img.youtube.com/vi/B_O4vE5Uff4/hqdefault.jpg",
+    thumbnail: youneedtohearthis,
     creator: "That One Girl in B.Tech",
     title: "if you are in your early 20s, you need to hear this",
     views: "421 Views",
@@ -48,7 +52,7 @@ const dummyData = [
   },
   {
     id: "W0EZDgKWEwQ",
-    thumbnail: "https://img.youtube.com/vi/W0EZDgKWEwQ/hqdefault.jpg",
+    thumbnail: placement,
     creator: "That One Girl in B.Tech",
     title:
       "HOW TO: PLACEMENT EP 1 | RESOURCES TO PREPARE FOR YOUR CAMPUS PLACEMENT",

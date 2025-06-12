@@ -1,5 +1,4 @@
 import React from "react";
-import "./ProfilePage.css";
 import drashtiImage from "../assets/images/drashti-photo.png";
 import Header from "../components/Header";
 import BottomNav from "./BottomNav";

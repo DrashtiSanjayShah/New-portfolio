@@ -4,7 +4,6 @@ import { MdHome } from "react-icons/md";
 import { GiTrophy } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import Resume from "../assets/Resume.pdf";
-import "./BottomNav.css";
 
 const BottomNav = () => {
   return (
