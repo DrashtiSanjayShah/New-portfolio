@@ -7,6 +7,17 @@
   margin-bottom: 4rem
 }
 
+.achievement-swiper {
+  width: 480px;
+  max-width: 100%;
+}
+
+.swiper{
+   margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+
 .hero-section {
   text-align: center;
   margin-bottom: 2rem;

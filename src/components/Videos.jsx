@@ -4,7 +4,8 @@ import heetWebsite from "../assets/images/heetwebsite.png";
 import friday from "../assets/images/friday.png";
 import youneedtohearthis from "../assets/images/youneedtohearthis.png";
 import placement from "../assets/images/placement.png";
-// import heetWebsite from "../assets/images/heetwebsite.png";
+import Teaching from "../assets/images/Teaching.jpeg";
+import Exam from "../assets/images/Exam.jpeg";
 import channelPhoto from "../assets/images/drashti-photo.png";
 
 const dummyData = [
@@ -26,7 +27,7 @@ const dummyData = [
   },
   {
     id: "xayj150NLrU",
-    thumbnail: "https://img.youtube.com/vi/xayj150NLrU/hqdefault.jpg",
+    thumbnail: Teaching,
     creator: "That One Girl in B.Tech",
     title: "Teaching Web Design | I became a Teacher",
     views: "78 Views",
@@ -35,7 +36,7 @@ const dummyData = [
 
   {
     id: "Vn6kGqEWukw",
-    thumbnail: "https://img.youtube.com/vi/Vn6kGqEWukw/hqdefault.jpg",
+    thumbnail: Exam,
     creator: "That One Girl in B.Tech",
     title: "Watch this before your NEXT EXAM",
     views: "100 Views",
