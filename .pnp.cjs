@@ -28,6 +28,7 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["@emailjs/browser", "npm:4.4.1"],\
           ["@eslint/js", "npm:9.28.0"],\
           ["@types/react", "npm:19.1.6"],\
           ["@types/react-dom", "virtual:1f7ff5456abe51ae3d52b068f25dfb696b341f44729931b21256851d9ecf9e968f2a8da620d2768317412614db4450a0a2855814019df966331ea8595d8d6ae4#npm:19.1.5"],\
@@ -317,6 +318,15 @@ const RAW_RUNTIME_STATE =
           ["@babel/helper-string-parser", "npm:7.27.1"],\
           ["@babel/helper-validator-identifier", "npm:7.27.1"],\
           ["@babel/types", "npm:7.27.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@emailjs/browser", [\
+      ["npm:4.4.1", {\
+        "packageLocation": "../../../.yarn/berry/cache/@emailjs-browser-npm-4.4.1-64a2cb04f8-10c0.zip/node_modules/@emailjs/browser/",\
+        "packageDependencies": [\
+          ["@emailjs/browser", "npm:4.4.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1645,6 +1655,7 @@ const RAW_RUNTIME_STATE =
       ["workspace:.", {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["@emailjs/browser", "npm:4.4.1"],\
           ["@eslint/js", "npm:9.28.0"],\
           ["@types/react", "npm:19.1.6"],\
           ["@types/react-dom", "virtual:1f7ff5456abe51ae3d52b068f25dfb696b341f44729931b21256851d9ecf9e968f2a8da620d2768317412614db4450a0a2855814019df966331ea8595d8d6ae4#npm:19.1.5"],\

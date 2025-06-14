@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { FaYoutube, FaInstagram } from "react-icons/fa";
 import Resume from "../assets/Resume.pdf";
-import videoPlaceholder from "../assets/images/video.mp4";
+// import videoPlaceholder from "../assets/images/video.mp4";
 // import './video.css';
 
 const VideoPlayer = () => {
@@ -34,7 +34,7 @@ useEffect(() => {
       <div style={{ display: "flex", alignItems: "center" }}>
         
         <video
-          src={videoPlaceholder}
+          // src={videoPlaceholder}
           controls
           autoPlay
           muted

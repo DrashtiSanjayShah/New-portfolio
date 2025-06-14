@@ -6,6 +6,7 @@ import ContactForm from './components/ContactForm';
 import ProfilePage from './components/ProfilePage';
 import AchievementsPage from './components/AchievementsPage';
 import YouTubePlayer from './components/YoutubePlayer';
+import Freelance from './components/Freelance';
 function App() {
   return (
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/profile" element={<ProfilePage />} />
          <Route path="/achievements" element={<AchievementsPage />} />
          <Route path="/fullvideo" element={<YouTubePlayer />} />
+         <Route path="/freelance" element={<Freelance />} />
       </Routes>
 
   );

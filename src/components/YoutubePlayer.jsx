@@ -1,7 +1,7 @@
 import React from "react";
 import "./YoutubePlayer.css";
 import Header from "./Header";
-import video from "../assets/images/video.mp4";
+// import video from "../assets/images/video.mp4";
 import { Card, Container } from "react-bootstrap";
 import channelPhoto from "../assets/images/drashti-photo.png"; // ✅ Add this line
 
@@ -20,7 +20,7 @@ const YouTubePlayer = () => {
       <Header />
       <div className="full-video-page-container">
         <div className="full-video-wrapper">
-          <video src={video} controls autoPlay muted />
+          {/* <video src={video} controls autoPlay muted /> */}
         </div>
 
         <div className="full-video-details">
