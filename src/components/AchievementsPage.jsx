@@ -89,7 +89,7 @@ const AchievementsPage = () => {
               ))}
             </Swiper>
 
-            <div className="right-side-video">
+            <div className="achievement-right-side-video" style={{ width: '60%'}}>
               <h3>{achievement.title}</h3>
               <p>{achievement.description}</p>
             </div>
