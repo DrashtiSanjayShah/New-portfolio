@@ -12,47 +12,53 @@ import MLSA2 from '../assets/images/MLSA2.png';
 import MLSA3 from '../assets/images/MLSA3.png';
 import MLSA4 from '../assets/images/MLSA4.png';
 import Grad from '../assets/images/Grad.jpg';
+import Grad2 from '../assets/images/Grad2.jpg';
 import Beacon_letter from '../assets/images/beacon_letter.png';
 import beacon from '../assets/images/Beacon.jpg';
+import Beacon2 from '../assets/images/Beacon2.jpg';
 import Run from '../assets/images/Marathon.jpg';
+import Run2 from '../assets/images/Marathon2.jpg';
+import Run3 from '../assets/images/Marathon3.jpg';
 import VJTI1 from '../assets/images/VJTI1.jpg';
+import VJTI from '../assets/images/VJTI.jpg';
+
 // import VJTI2 from '../assets/images/VJTI2.jgp';
 import golden_badge from '../assets/images/gold_badge.png'
 const achievements = [
    {
     title: "MLSA",
     description:
-      "During the 3rd year of my engineering, I decided to finally submit my entry to becoming a Microsoft Learn Student Ambassabor. And this decision led me to hosting 5+ session with more than 300 participants. I have always loved teaching and being a MLSA gave me an opportunity to interact with students form different nationalities and build a strong community.",
+      "During the my engineering, I signed up to become a Microsoft Learn Student Ambassabor. And this decision led me to hosting 5+ session with more than 300 participants. I have always loved teaching and being a MLSA gave me an opportunity to interact with students from different nationalities and build a strong community.",
     images: [MLSA1, MLSA2, MLSA3, MLSA4],
   },
   {
     title: "CGPA: 9.43",
     description:
-      "I have always been academically at the top of my game. While engineering was tough given the first half been during the pandemic, i have done well with the avergae CGPA of 9.54.",
-    images: [Grad],
+      "I am proud to share that my average CGPA over the 4 year s of engineering is 9.54. Admittely a high score like this was difficult to pull off as the first year was online and we were just getting a hang of understanding the concepts without a single offline class",
+    images: [Grad, Grad2],
   },
     {
-    title: "Beacon Chronicle Feature",
+    title: "Beacon",
     description:
-      "I always loved teaching and the ISR initiative gave me the opportunity to teach web design something that i do  professionaly as well for 15 underpriviledged students. 3 students now have a job as junior web designers and I couldnt be more happier.",
-    images: [Beacon_letter, beacon],
+      "I brought my passion for teaching from MLSA to Beacon. Under this program, I impacted the lives of 15 underpriviledged students with lessons covering basics of Web Design. What makes me super happy is that out of those students, 3 of them now have a job as Junior Web Designers.",
+    images: [Beacon_letter, beacon, Beacon2],
   },
   {
     title: "Speaker at VJTI Mumbai",
     description:
-      "I am always eager to learn new technologies. During college, I took up Blockchain as my Honors subject and this gave me the opportunity to speak at VJTI college of Engineering about the Bulding BLocks of Blockchain. Talking in frout oif a audence of 75+ begineers, I had an amazing expereince.",
-    images: [VJTI1],
+      "I had the immense priviledge of sharing my knowledge about 'blockchain' at {event name} hosted by {} at the VJTI college of engineering. I spoke to an audeince of 100+ college students and had an amazing expereince.",
+    images: [VJTI,VJTI1],
   },
   {
     title: "Marathon Runner",
     description:
-      "Secured 2nd position for creating a finance dashboard using React and Firebase.",
-    images: [Run],
+      "I picked up running as a way to blow off some steam and have participated in 5KM and 10KM categories. The feeling I get when i cross the finish line ",
+    images: [Run, Run2, Run3],
   },
       {
     title: "CGPA: 9.43",
     description:
-      "Consistently ranked in the top 10% of the batch across all semesters.",
+      "I write regularly on Linkedin and my contribution to the Web Developmet Safe got reognised with the 'Top Web Developent Voice'. ",
     images: [golden_badge],
   },
 

@@ -1,15 +1,22 @@
 import React, { useState } from "react";
 import { Card, Row, Col, Container } from "react-bootstrap";
-import heetWebsite from "../assets/images/heetwebsite.png";
+import HeetWebsite from "../assets/images/Heet-website.png";
 import friday from "../assets/images/friday.png";
 import youneedtohearthis from "../assets/images/youneedtohearthis.png";
 import Teaching from "../assets/images/Teaching.jpeg";
 import Exam from "../assets/images/Exam.jpeg";
-import channelPhoto from "../assets/images/drashti-photo.png";
+
+
+
+// Links to the work
+//Heet website (netlify): https://famous-bublanina-d637d4.netlify.app
+//sageBhrigu (netlify): https://starlit-manatee-7c9f3f.netlify.app
+//richon agro - github (needs minor changes)
+//money montage - github (needs minor changes)
 
 const dummyData = [
   {
-    thumbnail: heetWebsite,
+    thumbnail: HeetWebsite,
     title: "Heet's Portfolio",
     description: "Making a FREE PORTFOLIO for my FOLLOWER",
    
@@ -70,9 +77,7 @@ const FreelaneProjects = () => {
                   className="video-small-thumbnail"
                 />
                 <Card.Body>
-                  <div className="card-body" style={{ display: "flex" }}>
-
-                    <img className="channel-photo" src={channelPhoto} />
+                  <div className="card-body">
                     <Card.Title className="video-title">
                       {item.title}
                     </Card.Title>

@@ -1,8 +1,14 @@
-import React, { useState } from "react";
+
+
+import React, { useState, useRef } from "react";
+import emailjs from '@emailjs/browser';
 import Header from './Header';
 import BottomNav from "./BottomNav";
 
 const ContactForm = () => {
+
+  const form = useRef()
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -32,12 +38,20 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     const foundErrors = validate();
     if (Object.keys(foundErrors).length > 0) {
       setErrors(foundErrors);
-    } else {
-      console.log("Submitted:", formData);
-      setSubmitted(true);
+      return;
+    }
+const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+emailjs.sendForm(serviceID, templateID, form.current, publicKey)
+.then((result) => {
+  console.log(result.text);
+   setSubmitted(true);
       setFormData({
         name: "",
         email: "",
@@ -45,7 +59,9 @@ const ContactForm = () => {
         budget: "",
         message: "",
       });
-    }
+}, (error) => {
+  console.log(error.text);
+}) ;
   };
 
   return (
@@ -53,8 +69,8 @@ const ContactForm = () => {
     <Header />
     <div className="contact-form-container">
       <h2>Let’s Work Together</h2>
-      {submitted && <p className="success-message">Thanks! I’ll get back to you soon.</p>}
-      <form onSubmit={handleSubmit}>
+      {submitted && <p className="success-message">Hi, I have received your query! I’ll get back to you soon.</p>}
+      <form ref={form} autoComplete="off" onSubmit={handleSubmit}>
         <label>Name*</label>
         <input name="name" value={formData.name} onChange={handleChange} />
         {errors.name && <p className="error">{errors.name}</p>}
