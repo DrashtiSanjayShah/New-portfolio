@@ -28,37 +28,37 @@ const achievements = [
    {
     title: "MLSA",
     description:
-      "During the my engineering, I signed up to become a Microsoft Learn Student Ambassabor. And this decision led me to hosting 5+ session with more than 300 participants. I have always loved teaching and being a MLSA gave me an opportunity to interact with students from different nationalities and build a strong community.",
+      "During my engineering, I signed up to become a Microsoft Learn Student Ambassador. This decision led me to host 5+ sessions with over 300 participants. I have always loved teaching, and being an MLSA gave me the opportunity to interact with students from different nationalities and build a strong community.",
     images: [MLSA1, MLSA2, MLSA3, MLSA4],
   },
   {
     title: "CGPA: 9.43",
     description:
-      "I am proud to share that my average CGPA over the 4 year s of engineering is 9.54. Admittely a high score like this was difficult to pull off as the first year was online and we were just getting a hang of understanding the concepts without a single offline class",
+      "I am proud to share that my average CGPA over the four years of engineering is 9.54. Admittedly, achieving a high score like this was challenging, especially since the first year was entirely online, and we were still getting the hang of understanding core concepts without a single offline class.",
     images: [Grad, Grad2],
   },
     {
     title: "Beacon",
     description:
-      "I brought my passion for teaching from MLSA to Beacon. Under this program, I impacted the lives of 15 underpriviledged students with lessons covering basics of Web Design. What makes me super happy is that out of those students, 3 of them now have a job as Junior Web Designers.",
+      "I carried my passion for teaching from MLSA to Beacon. Under this program, I had the opportunity to impact the lives of 15 underprivileged students by teaching them the basics of web design. What makes me incredibly happy is that three of them now have jobs as junior web designers.",
     images: [Beacon_letter, beacon, Beacon2],
   },
   {
     title: "Speaker at VJTI Mumbai",
     description:
-      "I had the immense priviledge of sharing my knowledge about 'blockchain' at {event name} hosted by {} at the VJTI college of engineering. I spoke to an audeince of 100+ college students and had an amazing expereince.",
+      "I had the immense privilege of sharing my knowledge about Blockchain at {event name}, hosted by {organization name} at VJTI College of Engineering. I spoke to an audience of over 100 college students and had an amazing experience.",
     images: [VJTI,VJTI1],
   },
   {
     title: "Marathon Runner",
     description:
-      "I picked up running as a way to blow off some steam and have participated in 5KM and 10KM categories. The feeling I get when i cross the finish line ",
+      "What began as a stress-reliever quickly turned into a passion. I’ve run in several 5KM and 10KM events, and the high of crossing the finish line never gets old — it's a reminder of both discipline and joy.",
     images: [Run, Run2, Run3],
   },
       {
     title: "CGPA: 9.43",
     description:
-      "I write regularly on Linkedin and my contribution to the Web Developmet Safe got reognised with the 'Top Web Developent Voice'. ",
+      "I write regularly on LinkedIn, and my contributions to the web development space were recognized with the 'Top Web Development Voice' badge.",
     images: [golden_badge],
   },
 
