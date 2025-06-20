@@ -3,9 +3,7 @@ import { Card, Row, Col, Container } from "react-bootstrap";
 import HeetWebsite from "../assets/images/Heet-website.png";
 import LinkedinClone from "../assets/images/linkedin.png";
 import MoneyMontage from "../assets/images/MoneyMontage.png";
-import youneedtohearthis from "../assets/images/youneedtohearthis.png";
-import Teaching from "../assets/images/Teaching.jpeg";
-import Exam from "../assets/images/Exam.jpeg";
+import Sagebhrigu from "../assets/images/sagebhrigu.png";
 
 // Links to the work
 //Heet website (netlify): https://famous-bublanina-d637d4.netlify.app
@@ -34,7 +32,7 @@ const dummyData = [
   },
 
   {
-    thumbnail: Exam,
+    thumbnail: Sagebhrigu,
     title: "SageBhrigu",
     description: "Watch this before your NEXT EXAM",
     link: "https://starlit-manatee-7c9f3f.netlify.app",
@@ -42,7 +40,6 @@ const dummyData = [
 ];
 
 const FreelaneProjects = () => {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
   const rows = [];
   for (let i = 0; i < dummyData.length; i += 2) {
     rows.push(dummyData.slice(i, i + 2));

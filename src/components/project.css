@@ -1,0 +1,35 @@
+.container {
+  padding: 1rem;
+}
+
+.project-card {
+  transition: transform 0.3s ease;
+  border: none;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  border: 1px solid grey;
+  border-radius: 1rem;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+}
+
+.project-card .card-title {
+  font-size: 1.5rem;
+}
+
+.project-card .card-text {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.project-card .badge {
+  background-color: #393939;
+  font-size: 0.8rem;
+  margin-right: 6px;
+  margin-top: 8px;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+}

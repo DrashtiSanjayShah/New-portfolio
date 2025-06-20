@@ -11,8 +11,8 @@ const categories = [
   { name: 'Linkedin', external: 'https://www.linkedin.com/in/drashtisanjayshah/' },
   { name: 'GitHub', external: 'https://github.com/DrashtiSanjayShah' },
   { name: 'Certifications', external: 'https://drive.google.com/drive/folders/16LAVwVvn2WORqqTWsg9Hzt7KAdHXK0xS?usp=share_link' },
-  { name: 'My Fav YT channels', external: '/fav-yt' },
-  { name: 'Project Recommendations', external: '/projects' },
+  { name: 'My Fav YT channels', path: '/channels' },
+  { name: 'Project Recommendations', path: '/projects' },
 ];
 
 const FilterBar = () => (

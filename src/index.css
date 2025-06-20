@@ -66,8 +66,19 @@ body {
 
 }
 
+.channel-card-body{
+  margin-left: 1rem;
+}
 
-
+.channel-photo-fav{
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  margin-top: 1rem;
+   object-position: center top;
+}
 .logo{
   text-decoration: none; 
   color: white;
