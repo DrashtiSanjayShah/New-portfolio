@@ -96,11 +96,12 @@ const Videos = () => {
                     <img className="channel-photo" src={channelPhoto} />
                     <Card.Title className="video-title">
                       {item.title}
-                    </Card.Title>
-                  </div>
+                   
                   <Card.Text className="video-details">
                     {item.creator} . {item.views} . {item.time}
                   </Card.Text>
+                   </Card.Title>
+                  </div>
                 </Card.Body>
               </Card>
             </Col>

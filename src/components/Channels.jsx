@@ -90,13 +90,14 @@ const Videos = () => {
                   <div className="channel-card-body" style={{ display: "flex" }}>
 
                     <img className="channel-photo-fav" src={channelPhoto} />
-                    <Card.Title className="video-title">
+                    <Card.Title className="channel-name">
                       {item.title}
-                    </Card.Title>
-                  </div>
+                   
                   <Card.Text className="video-details">
                     {item.creator} . {item.views} . {item.time}
                   </Card.Text>
+                   </Card.Title>
+                  </div>
                 </Card.Body>
               </Card>
             </Col>

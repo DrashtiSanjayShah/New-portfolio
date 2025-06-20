@@ -79,6 +79,11 @@ body {
   margin-top: 1rem;
    object-position: center top;
 }
+
+.channel-name{
+  margin: 4rem
+}
+
 .logo{
   text-decoration: none; 
   color: white;
@@ -204,7 +209,6 @@ body {
 
 .video-details {
   font-size: 0.75rem;
-  margin: -.5rem 3rem ;
   padding-bottom: 3rem;
   color: grey;
 }
