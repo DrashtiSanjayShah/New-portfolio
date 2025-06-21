@@ -56,7 +56,7 @@ const FreelaneProjects = () => {
                   <Card.Img
                     variant="top"
                     src={item.thumbnail}
-                    className="video-small-thumbnail"
+                    className="video-small-thumbnail" loading="lazy"
                   />
                 </a>
                 <Card.Body>

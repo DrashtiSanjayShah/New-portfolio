@@ -241,7 +241,6 @@ body {
 
 .profile-page-container {
   padding-left: 2rem;
-  font-family: "Roboto", sans-serif;
   background-color: #0f0f0f;
   color: white;
   display: flex;
@@ -437,7 +436,8 @@ form{
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 768px)
+ {
   .header {
     flex-direction: row;
     justify-content: space-between;
@@ -451,7 +451,7 @@ form{
   }
 
   .icon {
-    font-size: 32px;
+    font-size: 24px;
   }
   /* Adjust video layout for mobile */
   .videos {
@@ -479,20 +479,33 @@ form{
   .videoPlayer-container {
     flex-direction: column;
     /* align-items: center; */
-    padding: 3rem 1rem;
   }
+
 
   .right-side-video {
     margin-top: 1rem;
   }
 
   .mobile-buttons {
-    margin: -2rem 0;
+    margin: 2rem ;
+    padding: 0rem;
+    margin-bottom: 0rem;
   }
 
+  .top-section {
+    padding:0rem;
+  }
+
+  .top-right, .bottom-section{
+    padding: 1rem
+  }
+
+  .profile-page-container{
+    padding-left:0;
+  }
 
   .video-button {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
   }
 
   .right-side-video h5 {
@@ -502,7 +515,8 @@ form{
   }
 
   .right-side-video p {
-    font-size: 1.25rem;
+    font-size: 1rem;
+    margin: 0rem;
   }
   .small-thumbnail {
     width: 100%;
@@ -513,10 +527,11 @@ form{
 
   .video-details {
     /* margin-top: 1.5rem; */
-    font-size: 1rem;
+    font-size: 0.75rem;
+    /* padding-bottom: 0.2rem; */
   }
   .video-title {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   .bottom-nav {
@@ -555,3 +570,4 @@ form{
     border-radius: 8px 8px 0 0;
   }
 } */
+
