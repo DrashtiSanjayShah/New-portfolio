@@ -87,7 +87,7 @@ const Videos = () => {
               >
                 <Card.Img
                   variant="top"
-                  src={item.thumbnail}
+                  src={item.thumbnail} loading="lazy"
                   className="video-small-thumbnail"
                 />
                 <Card.Body>

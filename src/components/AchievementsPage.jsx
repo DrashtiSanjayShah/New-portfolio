@@ -87,7 +87,7 @@ const AchievementsPage = () => {
                 <SwiperSlide key={imgIndex}>
                   <img
                     src={img}
-                    alt={achievement.title}
+                    alt={achievement.title} loading="lazy"
                     className="small-thumbnail" style={{ objectFit: 'contain'}}
                     onClick={() => window.open(img, "_blank")}
                   />
