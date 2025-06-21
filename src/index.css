@@ -12,9 +12,6 @@ body {
   justify-content: space-between;
 }
 
-.content-wrap {
-  padding-bottom: 60px; /* Same height as your bottom nav */
-}
 
 .header {
   display: flex;
@@ -68,6 +65,7 @@ body {
 
 .channel-card-body{
   margin-left: 1rem;
+  display: flex;
 }
 
 .channel-photo-fav{
@@ -176,18 +174,7 @@ body {
   border-radius: 8px 0 0 8px;
 }
 
-@media (max-width: 768px) {
-  .achievement-card {
-    flex-direction: column;
-    height: auto;
-  }
 
-  .achievement-img {
-    width: 240px;
-    height: 180px;
-    border-radius: 8px 8px 0 0;
-  }
-}
 
 .channel-photo {
   width: 2rem;
@@ -472,7 +459,9 @@ form{
     align-items: center;
     gap: 1.5rem;
   }
-
+.achievement-right-side-video p{
+  width: 85vw;
+}
   .video-small-thumbnail {
     width: 100%;
     height: auto;
@@ -500,6 +489,7 @@ form{
   .mobile-buttons {
     margin: -2rem 0;
   }
+
 
   .video-button {
     font-size: 0.85rem;
@@ -533,6 +523,16 @@ form{
     padding: 6px 0;
   }
 
+.channel-card-body{
+  display: block; /* or flex-direction: column; if you still want flex */
+    text-align: center; /* centers inline or inline-block content like img */
+    margin-left: 0;
+}
+
+.channel-name{
+  text-align: left;
+}
+
   .nav-link {
     font-size: 0.65rem;
   }
@@ -542,3 +542,16 @@ form{
   }
 }
 
+/* 
+@media (max-width: 768px) {
+  .achievement-card {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .achievement-img {
+    width: 240px;
+    height: 180px;
+    border-radius: 8px 8px 0 0;
+  }
+} */

@@ -87,7 +87,7 @@ const Videos = () => {
               >
               
                 <Card.Body>
-                  <div className="channel-card-body" style={{ display: "flex" }}>
+                  <div className="channel-card-body" >
 
                     <img className="channel-photo-fav" src={channelPhoto} />
                     <Card.Title className="channel-name">

@@ -6,49 +6,55 @@ import BottomNav from "./BottomNav";
 const projects = [
   {
     title: "AI Career Counsellor Bot",
-    tags: ["AI", "Flask", "ML"],
+    tags: ["OpenAI", "Python", "Flask", "ML"],
     description:
       "Chatbot that guides students on career paths based on interests using OpenAI or Scikit-learn.",
   },
   {
     title: "Real-Time Weather Alert System",
-    tags: ["Cloud", "Node.js", "API"],
+    tags: ["Cloud", "Node.js", "API", "AWS Lamba"],
     description:
       "Get SMS or email alerts for severe weather using AWS Lambda, OpenWeatherMap API, and Twilio.",
   },
   {
     title: "Habit Tracker Mobile App",
-    tags: ["Flutter", "Firebase", "Mobile"],
+    tags: ["Flutter", "Firebase", "Dart"],
     description:
       "A beautiful app to track habits with daily goals, push notifications, and dark mode.",
   },
   {
-    title: "Browser Extension – Tab Organizer",
-    tags: ["JS", "Extension API"],
+    title: "Smart Recipe Recommender",
+    tags: ["Python", "Scikit-learn", "Spoonacular API"],
     description:
-      "Auto-categorize tabs into folders like Research or Social using Chrome Extension APIs.",
+      "A app that suggests receiped based on ingredients & dietary preferences",
   },
   {
     title: "Invoice Generator CLI Tool",
-    tags: ["Python", "CLI", "PDF"],
+    tags: ["Python", "CLI", "PDFKit"],
     description:
       "Terminal-based tool to generate PDF invoices using ReportLab or PDFKit with JSON templates.",
   },
   {
+    title: "Number Plate Recognition System",
+    tags: ["Python", "OpenCV", "Tesseract"],
+    description:
+      "Detects license plates and extracts text using a webcam",
+  },
+  {
     title: "Spotify Song Mood Classifier",
-    tags: ["ML", "Spotify API", "Streamlit"],
+    tags: ["Python" ,"Spotify API", "Streamlit"],
     description:
       "Predicts mood of songs based on metadata and lyrics. Visualized using Streamlit.",
   },
   {
     title: "IoT Smart Plant Monitor",
-    tags: ["IoT", "Arduino", "MQTT"],
+    tags: ["Blynk", "Arduino", "MQTT"],
     description:
       "Monitors plant moisture and sends updates via Blynk/MQTT. Dashboard via React or Flutter.",
   },
   {
     title: "Notion-like Markdown Editor",
-    tags: ["React", "MongoDB", "Editor"],
+    tags: ["React", "MongoDB", "Tiptap/Draft.js"],
     description:
       "Custom Notion clone with markdown support, block editor, theme switch, and PDF export.",
   },
@@ -60,7 +66,7 @@ const projects = [
   },
   {
     title: "E-commerce Admin Dashboard",
-    tags: ["Vue", "Charts", "Django"],
+    tags: ["Vue.js/ReactJS", "Charts.js", "Django"],
     description:
       "Shows orders, profits, and inventory with filters and Chart.js visualizations. Supports roles.",
   },
