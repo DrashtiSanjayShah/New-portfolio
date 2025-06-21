@@ -12,7 +12,6 @@ body {
   justify-content: space-between;
 }
 
-
 .header {
   display: flex;
   height: 40px;
@@ -60,32 +59,31 @@ body {
   display: flex;
   border-bottom: 1px solid #3a3a3a;
   flex-wrap: nowrap;
-
 }
 
-.channel-card-body{
+.channel-card-body {
   margin-left: 1rem;
   display: flex;
 }
 
-.channel-photo-fav{
+.channel-photo-fav {
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
   margin-top: 1rem;
-   object-position: center top;
+  object-position: center top;
 }
 
-.channel-name{
-  margin: 4rem
+.channel-name {
+  margin: 4rem;
 }
 
-.logo{
-  text-decoration: none; 
+.logo {
+  text-decoration: none;
   color: white;
-  margin-top: 0rem
+  margin-top: 0rem;
 }
 
 /* Video card */
@@ -118,7 +116,7 @@ body {
 .videos {
   margin: 1rem;
   display: flex;
-  align-items: flex-start; 
+  align-items: flex-start;
   justify-content: center;
   gap: 2rem;
 }
@@ -157,7 +155,7 @@ body {
   transition: color 0.3s ease;
 }
 
-.card{
+.card {
   cursor: pointer;
 }
 
@@ -174,8 +172,6 @@ body {
   border-radius: 8px 0 0 8px;
 }
 
-
-
 .channel-photo {
   width: 2rem;
   height: 2rem;
@@ -183,7 +179,7 @@ body {
   object-fit: cover;
   flex-shrink: 0;
   margin-top: 1rem;
-   object-position: center top;
+  object-position: center top;
 }
 
 .video-title {
@@ -199,8 +195,6 @@ body {
   padding-bottom: 3rem;
   color: grey;
 }
-
-
 
 /* Bottom Navbar */
 
@@ -270,7 +264,7 @@ body {
   height: 16rem;
   border-radius: 50%;
   object-fit: cover;
-   object-position: center top;
+  object-position: center top;
 }
 
 .top-right {
@@ -282,7 +276,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.details p{
+.details p {
   color: grey;
 }
 
@@ -299,7 +293,7 @@ body {
 }
 
 /* Bottom Section */
-.bottom-section{
+.bottom-section {
   margin-top: -2rem;
 }
 
@@ -320,7 +314,7 @@ body {
   background-color: #1c1c1c;
   padding: 1rem;
   border-radius: 12px;
-  
+
   font-size: 1rem;
   color: #e0e0e0;
   border: 1px solid #2a2a2a;
@@ -331,13 +325,12 @@ body {
   background-color: #2a2a2a;
 }
 
-
 /* Contact Form */
 
 .contact-form-container {
   max-width: 600px;
-  margin: -2rem auto; 
-  padding: 2rem 2rem 0 2rem; 
+  margin: -2rem auto;
+  padding: 2rem 2rem 0 2rem;
   background-color: #0f0f0f;
   border-radius: 12px;
   box-sizing: border-box;
@@ -347,7 +340,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding-bottom: 6rem; 
+  padding-bottom: 6rem;
 }
 
 button {
@@ -361,7 +354,6 @@ button {
   transition: background-color 0.3s ease;
   margin-bottom: 0; /* prevent margin collapse */
 }
-
 
 .contact-form-container h2 {
   color: #ffffff;
@@ -425,19 +417,17 @@ button:hover {
     font-size: 1.5rem;
   }
   input,
-select,
-textarea{
-  width: 90%;
+  select,
+  textarea {
+    width: 90%;
+  }
+
+  form {
+    margin-bottom: 1rem;
+  }
 }
 
-form{
-  margin-bottom: 1rem;
-}
-}
-
-
-@media (max-width: 768px)
- {
+@media (max-width: 768px) {
   .header {
     flex-direction: row;
     justify-content: space-between;
@@ -453,23 +443,28 @@ form{
   .icon {
     font-size: 24px;
   }
+
+  .container {
+    padding: 0;
+  }
   /* Adjust video layout for mobile */
   .videos {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
+    margin: 0;
   }
-.achievement-right-side-video p{
-  width: 85vw;
-}
+  .achievement-right-side-video p {
+    width: 85vw;
+  }
   .video-small-thumbnail {
     width: 100%;
     height: auto;
   }
 
-.card-body{
-  margin-top: 0rem;
-}
+  .card-body {
+    margin: 0.5rem;
+  }
 
   .filter-bar {
     overflow-x: auto;
@@ -481,27 +476,33 @@ form{
     /* align-items: center; */
   }
 
-
   .right-side-video {
     margin-top: 1rem;
   }
 
   .mobile-buttons {
-    margin: 2rem ;
+    margin: 2rem;
     padding: 0rem;
     margin-bottom: 0rem;
   }
 
+  .hero-section h1 {
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 1.5rem 1rem;
+  }
+
   .top-section {
-    padding:0rem;
+    padding: 0rem;
   }
 
-  .top-right, .bottom-section{
-    padding: 1rem
+  .top-right,
+  .bottom-section {
+    padding: 1rem;
   }
 
-  .profile-page-container{
-    padding-left:0;
+  .profile-page-container {
+    padding-left: 0;
   }
 
   .video-button {
@@ -538,15 +539,15 @@ form{
     padding: 6px 0;
   }
 
-.channel-card-body{
-  display: block; /* or flex-direction: column; if you still want flex */
+  .channel-card-body {
+    display: block; /* or flex-direction: column; if you still want flex */
     text-align: center; /* centers inline or inline-block content like img */
     margin-left: 0;
-}
+  }
 
-.channel-name{
-  text-align: left;
-}
+  .channel-name {
+    text-align: left;
+  }
 
   .nav-link {
     font-size: 0.65rem;
@@ -557,17 +558,8 @@ form{
   }
 }
 
-/* 
-@media (max-width: 768px) {
-  .achievement-card {
-    flex-direction: column;
-    height: auto;
+@media (max-width: 1240px) {
+  .video-small-thumbnail {
+    width: 360px;
   }
-
-  .achievement-img {
-    width: 240px;
-    height: 180px;
-    border-radius: 8px 8px 0 0;
-  }
-} */
-
+}
