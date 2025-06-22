@@ -68,7 +68,7 @@ emailjs.sendForm(serviceID, templateID, form.current, publicKey)
     <>
     <Header />
     <div className="contact-form-container">
-      <h2>Let’s Work Together</h2>
+      <h1 className="hero-section">Let’s Work Together</h1>
       {submitted && <p className="success-message">Hi, I have received your query! I’ll get back to you soon.</p>}
       <form ref={form} autoComplete="off" onSubmit={handleSubmit}>
         <label>Name*</label>

@@ -4,16 +4,14 @@ import Header from "../components/Header";
 import BottomNav from "./BottomNav";
 
 const qualifications = [
-    "Freelance Website Designer",
-  "Technical Writer | GitHub Contributor",
-  "Conducted sessions on Generative AI and Microsoft Cloud",
-    "4+ years of Web Development experience",
-  "Bachelor of Engineering in Information Technology: CGPA - 9.57",
-
-  "Microsoft Learn Student Ambassador (Beta)",
-
-  "Developed custom websites for small businesses and creators",
-  "Passionate about clean UI and helpful tech content",
+  "5+ years of hands-on experience in modern web development",
+  "Known for making complex tech feel simple",
+  "Bachelor’s in Information Technology (CGPA: 9.57)",
+  "Led technical training sessions with more than 400+ participants",
+  "Freelance developer for clients across education and small business sectors",
+  "Delivered invited talks and workshops at academic and tech forums",
+  "Skilled in HTML, CSS, JavaScript, React, Tailwind, and Git workflows",
+  "Focus on clean UI, performance, and user-first design",
 ];
 
 const ProfilePage = () => {
@@ -39,10 +37,13 @@ const ProfilePage = () => {
               <p className="location">Mumbai, India</p>
 
               <p className="description">
-                I'm a web developer, tech speaker, and student ambassador who
-                loves building clean, user-first websites and explaining
-                technical things simply. Whether it's a tutorial or a portfolio,
-                I try to keep it practical and helpful.
+                I'm a frontend developer and freelance web designer with over 4
+                years of experience building responsive, user-friendly websites.
+                I've taught web design, hosted sessions on Generative AI and
+                Microsoft Cloud, and spoken at student tech events across
+                communities. I hold a degree in Information Technology with a
+                9.57 CGPA. When I’m not coding or teaching, you’ll find me
+                crocheting plushies or simplifying tech concepts just for fun.
               </p>
             </div>
           </div>

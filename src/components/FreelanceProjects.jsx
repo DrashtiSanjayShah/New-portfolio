@@ -14,20 +14,20 @@ const dummyData = [
   {
     thumbnail: HeetWebsite,
     title: "Heet's Portfolio",
-    description: "Making a FREE PORTFOLIO for my FOLLOWER",
+    description: "I created Heet's Portfolio website keeping in mind his qualifications and personality. With a clean UI and minimal animations, Heet's portfolio is a reflection of his work ethics and experience.",
     link: "https://famous-bublanina-d637d4.netlify.app",
   },
   {
     thumbnail: MoneyMontage,
     title: "Money Montage",
     description:
-      "A Friday in life of a Corporate girlie💻 | making Ganesha Idol🌸",
+      "Money Montage as a company focuses on serving their customers with the right SPI and stocks. This website was not to attract clients but, to have a digital presence. Using colours like green, my motto was to invoke the sense of trust which is what you want from a financial adviser. ",
     link: "https://drashtisanjayshah.github.io/Money-Montage/",
   },
   {
     thumbnail: LinkedinClone,
     title: "Linkedin For the Girlies",
-    description: "Teaching Web Design | I became a Teacher",
+    description: "This is a old project but, I am super proud of it. Integrated with Firebase as the backend, this project taugh me a lot. The backend configuration took the life out of me but, now that I see it working just like how I imagined, everything was worthit! ",
     link: "https://linkedin-ccee8.web.app",
   },
 

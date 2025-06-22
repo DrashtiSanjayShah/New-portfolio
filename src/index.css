@@ -196,6 +196,12 @@ body {
   color: grey;
 }
 
+/* fav youtube channels */
+
+.channel-container{
+  padding-bottom: 3rem;
+
+}
 /* Bottom Navbar */
 
 .bottom-nav {
@@ -295,6 +301,7 @@ body {
 /* Bottom Section */
 .bottom-section {
   margin-top: -2rem;
+  padding-bottom: 3rem;
 }
 
 .section-title {
@@ -323,6 +330,10 @@ body {
 
 .qualification-item:hover {
   background-color: #2a2a2a;
+}
+
+.yt-details{
+  color: grey;
 }
 
 /* Contact Form */
@@ -408,7 +419,7 @@ button:hover {
 
 /* ========== Mobile Navigation Enhancements ========== */
 
-@media (max-width: 600px) {
+@media (max-width: 1370px) {
   .contact-form-container {
     padding: 1.5rem 1rem;
   }
@@ -420,6 +431,11 @@ button:hover {
   select,
   textarea {
     width: 90%;
+  }
+
+.video-small-thumbnail {
+    width: 100%;
+    height: auto;
   }
 
   form {
@@ -486,15 +502,23 @@ button:hover {
     margin-bottom: 0rem;
   }
 
+  .hero-section{
+    margin: 1rem 0rem;
+  }
+
   .hero-section h1 {
     font-size: 1.5rem;
-    text-align: left;
-    padding: 1.5rem 1rem;
+    text-align: center;
+    /* padding: 1.5rem 1rem; */
   }
 
   .top-section {
     padding: 0rem;
   }
+
+.yt-details{
+  font-size: 1rem;
+}
 
   .top-right,
   .bottom-section {
@@ -503,10 +527,11 @@ button:hover {
 
   .profile-page-container {
     padding-left: 0;
+    padding-bottom: 2rem;
   }
 
   .video-button {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
   }
 
   .right-side-video h5 {
@@ -547,7 +572,19 @@ button:hover {
 
   .channel-name {
     text-align: left;
+    margin: 0;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    font-size: 1.25rem;
   }
+
+  .channel-photo {
+  display: block;
+  margin: 1rem auto;
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+}
 
   .nav-link {
     font-size: 0.65rem;
@@ -558,7 +595,7 @@ button:hover {
   }
 }
 
-/* @media (min-width: 1240px) {
+/* @media (min-width: 1244px) {
   .video-small-thumbnail {
     width: 360px;
   }

@@ -89,9 +89,6 @@
 }
 
 @media (max-width: 768px) {
-  .hero-section h1 {
-    font-size: 1.8rem;
-  }
 
   .achievement-content h3 {
     font-size: 1.1rem;

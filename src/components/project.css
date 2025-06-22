@@ -33,3 +33,31 @@
   padding: 0.5rem 1rem;
   border-radius: 2rem;
 }
+
+@media (max-width: 786px) {
+
+  .container {
+    padding: 1rem 0 3rem 0 ;
+  }
+  .hero-section{
+font-size: 1.5rem;
+margin-left: 1rem;
+text-align: left;
+  }
+
+  .project-card{
+    margin: 2rem;
+  }
+
+  .project-card .card-title{
+    font-size: 1.25rem;
+  }
+
+  .project-card .card-text{
+    font-size: 0.75rem;
+    padding-bottom: 1rem;
+  }
+  .project-card .badge{
+    font-size: 0.6rem;
+  }
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, Badge, Container, Row, Col } from "react-bootstrap";
-import './project.css';
+import "./project.css";
 import Header from "./Header";
 import BottomNav from "./BottomNav";
 const projects = [
@@ -37,12 +37,11 @@ const projects = [
   {
     title: "Number Plate Recognition System",
     tags: ["Python", "OpenCV", "Tesseract"],
-    description:
-      "Detects license plates and extracts text using a webcam",
+    description: "Detects license plates and extracts text using a webcam",
   },
   {
     title: "Spotify Song Mood Classifier",
-    tags: ["Python" ,"Spotify API", "Streamlit"],
+    tags: ["Python", "Spotify API", "Streamlit"],
     description:
       "Predicts mood of songs based on metadata and lyrics. Visualized using Streamlit.",
   },
@@ -72,33 +71,35 @@ const projects = [
   },
 ];
 
-export default function TechProjects() {
+const Projects = () => {
   return (
     <>
-<Header />
-    <Container>
-      <h1 className="hero-section">Projects I Recommend</h1>
-      <Row>
-        {projects.map((proj, idx) => (
-          <Col key={idx} xs={12} md={6} className="mb-4">
-            <Card className="project-card">
-  <Card.Body>
-    <Card.Title>{proj.title}</Card.Title>
-    <Card.Text>{proj.description}</Card.Text>
-    <div className="d-flex flex-wrap">
-      {proj.tags.map((tag, i) => (
-        <Badge key={i} className="badge">
-          {tag}
-        </Badge>
-      ))}
-    </div>
-  </Card.Body>
-</Card>
-          </Col>
-        ))}
-      </Row>
-    </Container>
-    <BottomNav />
+      <Header />
+      <Container >
+        <h1 className="hero-section">Projects I Recommend</h1>
+        <Row>
+          {projects.map((proj, idx) => (
+            <Col key={idx} xs={12} md={6} className="mb-4">
+              <Card className="project-card">
+                <Card.Body>
+                  <Card.Title>{proj.title}</Card.Title>
+                  <Card.Text>{proj.description}</Card.Text>
+                  <div className="d-flex flex-wrap">
+                    {proj.tags.map((tag, i) => (
+                      <Badge key={i} className="badge">
+                        {tag}
+                      </Badge>
+                    ))}
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </Container>
+      <BottomNav />
     </>
   );
-}
+};
+
+export default Projects;
