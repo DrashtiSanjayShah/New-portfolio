@@ -113,7 +113,7 @@ const Header = () => {
                   flex: 1,
                   border: "none",
                   fontSize: "1.1rem",
-                  backgroundColor: "#1e1e1e",
+                  backgroundColor: "#fffff",
                   color: "white",
                 }}
                 autoFocus

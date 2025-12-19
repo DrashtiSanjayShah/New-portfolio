@@ -71,40 +71,44 @@ emailjs.sendForm(serviceID, templateID, form.current, publicKey)
       <h1 className="hero-section">Let’s Work Together</h1>
       {submitted && <p className="success-message">Hi, I have received your query! I’ll get back to you soon.</p>}
       <form ref={form} autoComplete="off" onSubmit={handleSubmit}>
-        <label>Name*</label>
+        <label>Name</label>
         <input name="name" value={formData.name} onChange={handleChange} />
         {errors.name && <p className="error">{errors.name}</p>}
 
-        <label>Email*</label>
+        <label>Email</label>
         <input name="email" type="email" value={formData.email} onChange={handleChange} />
         {errors.email && <p className="error">{errors.email}</p>}
 
-        <label>What do you need help with?*</label>
+        <label>What do you need help with?</label>
+           <div style={{width: '105%'}}>
         <select name="service" value={formData.service} onChange={handleChange}>
-          <option value="">-- Select --</option>
+          <option value="">Select a service</option>
           <option value="Website">Website</option>
           <option value="Consultation">Consultation</option>
           <option value="Collaboration">Collaboration</option>
           <option value="Other">Something else</option>
         </select>
+        </div>
         {errors.service && <p className="error">{errors.service}</p>}
 
-        <label>Budget range*</label>
+        <label>Budget range</label>
+        <div style={{width: '105%'}}>
         <select name="budget" value={formData.budget} onChange={handleChange}>
-          <option value="">-- Select --</option>
+          <option value="">Approximate budget</option>
           <option value="Below ₹5,000">Below ₹5,000</option>
           <option value="₹5,000 – ₹10,000">₹5,000 – ₹10,000</option>
           <option value="₹10,000 – ₹20,000">₹10,000 – ₹20,000</option>
           <option value="₹20,000+">₹20,000+</option>
         </select>
+        </div>
         {errors.budget && <p className="error">{errors.budget}</p>}
 
-        <label>Message*</label>
+        <label>Message</label>
         <textarea
           name="message"
           value={formData.message}
           rows="5"
-          style={{ resize: "none" }}
+          style={{ resize: "none", alignItems: 'center' }}
           onChange={handleChange}
         ></textarea>
         {errors.message && <p className="error">{errors.message}</p>}
