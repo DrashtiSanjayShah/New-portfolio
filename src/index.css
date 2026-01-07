@@ -57,7 +57,7 @@ body {
   background-color: #0f0f0f;
   padding: 1rem;
   display: flex;
-  border-bottom: 1px solid #3a3a3a;
+  /* border-bottom: 1px solid #3a3a3a; */
   flex-wrap: nowrap;
 }
 
@@ -255,7 +255,7 @@ body {
   gap: 2rem;
   align-items: center;
   flex-wrap: wrap;
-  border-bottom: 1px solid #3a3a3a;
+  /* border-bottom: 1px solid #3a3a3a; */
   padding-bottom: 2rem;
 }
 
@@ -364,6 +364,7 @@ button {
   transition: background-color 0.3s ease;
   margin-bottom: 0; /* prevent margin collapse */
   font-size: 1rem;
+  margin-left: 1rem;
 }
 
 .contact-form-container h2 {

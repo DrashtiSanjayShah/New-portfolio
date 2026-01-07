@@ -1,38 +1,70 @@
 import React from "react";
-import { FaFileAlt, FaUser, FaEnvelopeOpenText } from "react-icons/fa";
-import { MdHome } from "react-icons/md";
-import { GiTrophy } from "react-icons/gi";
-import { Link } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+
+import { GoHome, GoHomeFill } from "react-icons/go";
+import { PiMedalLight, PiMedalFill } from "react-icons/pi";
+import { MdOutlinePhone, MdPhone } from "react-icons/md";
+import { IoPersonOutline, IoPerson } from "react-icons/io5";
+import { FaRegFile } from "react-icons/fa";
+
 import Resume from "../assets/Resume.pdf";
 
 const BottomNav = () => {
+  const location = useLocation();
+  const path = location.pathname;
+
   return (
     <div className="bottom-nav">
-      <Link to="/" className="nav-link">
-        <MdHome className="icon" />
+      {/* Home */}
+      <NavLink to="/" className="nav-link">
+        {path === "/" ? (
+          <GoHomeFill className="icon" />
+        ) : (
+          <GoHome className="icon" />
+        )}
         <div className="label">Home</div>
-      </Link>
-      <Link to="/achievements" className="nav-link">
-        <GiTrophy className="icon" />
+      </NavLink>
+
+      {/* Achievements */}
+      <NavLink to="/achievements" className="nav-link">
+        {path === "/achievements" ? (
+          <PiMedalFill className="icon" />
+        ) : (
+          <PiMedalLight className="icon" />
+        )}
         <div className="label">Achievements</div>
-      </Link>
-      <Link to="/contact" className="nav-link">
-        <FaEnvelopeOpenText className="icon" />
+      </NavLink>
+
+      {/* Contact */}
+      <NavLink to="/contact" className="nav-link">
+        {path === "/contact" ? (
+          <MdPhone className="icon" />
+        ) : (
+          <MdOutlinePhone className="icon" />
+        )}
         <div className="label">Contact</div>
-      </Link>
+      </NavLink>
+
+      {/* Resume */}
       <a
         href={Resume}
         className="nav-link"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaFileAlt className="icon" />
+        <FaRegFile className="icon" />
         <div className="label">Resume</div>
       </a>
-      <Link to="/profile" className="nav-link">
-        <FaUser className="icon" />
+
+      {/* Profile */}
+      <NavLink to="/profile" className="nav-link">
+        {path === "/profile" ? (
+          <IoPerson className="icon" />
+        ) : (
+          <IoPersonOutline className="icon" />
+        )}
         <div className="label">Drashti</div>
-      </Link>
+      </NavLink>
     </div>
   );
 };

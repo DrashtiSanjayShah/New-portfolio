@@ -3,9 +3,8 @@ import "./achievements.css";
 import Header from "./Header";
 import Bottomnav from "./BottomNav";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import MLSA1 from '../assets/images/MLSA1.png';
 import MLSA2 from '../assets/images/MLSA2.png';
@@ -76,10 +75,9 @@ const AchievementsPage = () => {
         {achievements.map((achievement, index) => (
           <div className="videoPlayer-container" key={index}>
             <Swiper
-              modules={[Navigation, Autoplay]}
+              modules={[Autoplay]}
               spaceBetween={10}
               slidesPerView={1}
-              navigation
               autoplay={{ delay: 2500 }}
               className="achievement-swiper"
             >
