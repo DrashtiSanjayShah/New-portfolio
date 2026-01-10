@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
-import { CiSearch, CiBellOn } from "react-icons/ci";
+import { CiSearch, CiBellOn, CiFileOn }from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
+import Resume from "../assets/Resume.pdf";
+
 const Header = () => {
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
@@ -62,6 +64,13 @@ const Header = () => {
 
         <div className="right-icon" style={{ display: "flex", gap: "1rem" }}>
           <CiBellOn className="icon" />
+          <a
+        href={Resume}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <CiFileOn className="icon" />
+        </a>
           <CiSearch
             className="icon"
             onClick={toggleSearch}

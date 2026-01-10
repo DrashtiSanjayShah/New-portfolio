@@ -9,6 +9,7 @@ import YouTubePlayer from './components/YoutubePlayer';
 import Freelance from './components/Freelance';
 import Project from './components/project';
 import Channels from './components/Channels';
+import MyWork from './components/MyWork';
 function App() {
   return (
 
@@ -22,6 +23,7 @@ function App() {
          <Route path="/freelance" element={<Freelance />} />
          <Route path="/projects" element={<Project />} />
          <Route path="/channels" element={<Channels />} />
+         <Route path="/work" element={<MyWork />} />
       </Routes>
 
   );

@@ -1,13 +1,13 @@
 import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
-
+import { IoLaptopOutline, IoLaptop } from "react-icons/io5";
 import { GoHome, GoHomeFill } from "react-icons/go";
 import { PiMedalLight, PiMedalFill } from "react-icons/pi";
 import { MdOutlinePhone, MdPhone } from "react-icons/md";
 import { IoPersonOutline, IoPerson } from "react-icons/io5";
-import { FaRegFile } from "react-icons/fa";
 
-import Resume from "../assets/Resume.pdf";
+
+// import Resume from "../assets/Resume.pdf";
 
 const BottomNav = () => {
   const location = useLocation();
@@ -25,15 +25,17 @@ const BottomNav = () => {
         <div className="label">Home</div>
       </NavLink>
 
-      {/* Achievements */}
-      <NavLink to="/achievements" className="nav-link">
-        {path === "/achievements" ? (
-          <PiMedalFill className="icon" />
+      {/* My Work */}
+      <NavLink to="/work" className="nav-link">
+        {path === "/work" ? (
+          <IoLaptop className="icon" />
         ) : (
-          <PiMedalLight className="icon" />
+          <IoLaptopOutline className="icon" />
         )}
-        <div className="label">Achievements</div>
+        <div className="label">My Work</div>
       </NavLink>
+
+      
 
       {/* Contact */}
       <NavLink to="/contact" className="nav-link">
@@ -45,16 +47,15 @@ const BottomNav = () => {
         <div className="label">Contact</div>
       </NavLink>
 
-      {/* Resume */}
-      <a
-        href={Resume}
-        className="nav-link"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FaRegFile className="icon" />
-        <div className="label">Resume</div>
-      </a>
+      {/* Achievements */}
+      <NavLink to="/achievements" className="nav-link">
+        {path === "/achievements" ? (
+          <PiMedalFill className="icon" />
+        ) : (
+          <PiMedalLight className="icon" />
+        )}
+        <div className="label">Achievements</div>
+      </NavLink>
 
       {/* Profile */}
       <NavLink to="/profile" className="nav-link">
