@@ -69,7 +69,7 @@ const AchievementsPage = () => {
       <Header />
       <div className="achievements-container">
         <div className="hero-section">
-          <h1>My Achievements</h1>
+          {/* <h1>My Achievements</h1> */}
         </div>
 
         {achievements.map((achievement, index) => (

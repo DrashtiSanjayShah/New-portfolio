@@ -21,11 +21,6 @@ const dummyData = [
     title: "Tech with Tim",
   },
   {
-    thumbnail: Shreya,
-    text: "She’s a fun creator making content about makeup and beauty. This is my way of unwinding after a stressful day!",
-    title: "Shreya Jain",
-  },
-  {
     thumbnail: Computerphile,
     text: "This channel, in my opinion, is pure gold and super underrated. One of those channels on YouTube that are doing God’s work by sharing crisp, no-time-waste information. Admittedly, I do have to go through their videos 2–3 times before I finally understand everything completely, but I’m so glad I found them!",
     title: "Computerphile",
@@ -39,6 +34,11 @@ const dummyData = [
     thumbnail: RishabMishra,
     text: "Want to learn SQL? He’s the dude! Two days before my placements, I binge-watched all of his videos. Example-heavy stuff explained clearly — so you’ll finally remember the difference between a DELETE and a TRUNCATE!",
     title: "Rishab Mishra",
+  },
+  {
+    thumbnail: Shreya,
+    text: "She’s a fun creator making content about makeup and beauty. This is my way of unwinding after a stressful day!",
+    title: "Shreya Jain",
   },
 ];
 
