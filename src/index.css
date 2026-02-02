@@ -80,11 +80,20 @@ body {
   margin: 4rem;
 }
 
+/* Header logo */
 .logo {
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  color: white;
-  margin-top: 0rem;
 }
+
+.header-logo {
+  height: 56px;         
+  width: auto;
+  object-fit: contain;
+  cursor: pointer;
+}
+
 
 /* Video card */
 .small-thumbnail {
@@ -190,6 +199,12 @@ body {
   word-break: break-word;
 }
 
+.website-title {
+  font-size: 16px;
+  padding: 0;
+  margin: 1.6rem 0 0 1rem ;
+  line-height: 1.3;
+}
 .video-details {
   font-size: 0.75rem;
   padding-bottom: 3rem;

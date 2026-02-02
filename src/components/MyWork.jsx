@@ -3,7 +3,7 @@ import { Card, Row, Col, Container } from "react-bootstrap";
 import Header from "./Header";
 import VideoPlayer from "./VideoPlayer";
 import heetWebsite from "../assets/images/heetwebsite.png";
-import friday from "../assets/images/friday.png";
+import sql from "../assets/images/sql.png";
 import youneedtohearthis from "../assets/images/youneedtohearthis.png";
 import placement from "../assets/images/placement.png";
 import Teaching from "../assets/images/Teaching.jpeg";
@@ -20,14 +20,7 @@ const dummyData = [
     views: "131 Views",
     time: "4 months ago",
   },
-   {
-    id: "rDGo6utuRis",
-    thumbnail: friday,
-    creator: "That One Girl in B.Tech",
-    title: "A Friday in life of a Corporate girlie💻 | making Ganesha Idol🌸",
-    views: "140 Views",
-    time: "6 months ago",
-  },
+
   {
     id: "xayj150NLrU",
     thumbnail: Teaching,
@@ -36,7 +29,14 @@ const dummyData = [
     views: "78 Views",
     time: "1 year ago",
   },
-
+   {
+    id: "rDGo6utuRis",
+    thumbnail: sql,
+    creator: "That One Girl in B.Tech",
+    title: "Subqueries in SQL ",
+    views: "140 Views",
+    time: "6 months ago",
+  },
   {
     id: "Vn6kGqEWukw",
     thumbnail: Exam,

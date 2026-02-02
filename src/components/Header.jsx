@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import logo from "../assets/images/logo.png";
 import { CiSearch, CiBellOn, CiFileOn }from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
 import Resume from "../assets/Resume.pdf";
@@ -57,10 +58,10 @@ const Header = () => {
         }}
       >
         <div className="header-left">
-          <a href="/" className="logo">
-            <h2>Drashti Shah</h2>
-          </a>
-        </div>
+  <a href="/" className="logo">
+    <img src={logo} alt="Drashti Shah Logo" className="header-logo" />
+  </a>
+</div>
 
         <div className="right-icon" style={{ display: "flex", gap: "1rem" }}>
           <CiBellOn className="icon" />

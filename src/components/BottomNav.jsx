@@ -1,10 +1,11 @@
 import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import { IoLaptopOutline, IoLaptop } from "react-icons/io5";
+import { CiYoutube } from "react-icons/ci";
 import { GoHome, GoHomeFill } from "react-icons/go";
 import { PiMedalLight, PiMedalFill } from "react-icons/pi";
 import { MdOutlinePhone, MdPhone } from "react-icons/md";
 import { IoPersonOutline, IoPerson } from "react-icons/io5";
+import { FaYoutube } from "react-icons/fa";
 
 
 // import Resume from "../assets/Resume.pdf";
@@ -28,11 +29,11 @@ const BottomNav = () => {
       {/* My Work */}
       <NavLink to="/work" className="nav-link">
         {path === "/work" ? (
-          <IoLaptop className="icon" />
+          <FaYoutube className="icon" />
         ) : (
-          <IoLaptopOutline className="icon" />
+          <CiYoutube className="icon" />
         )}
-        <div className="label">My Work</div>
+        <div className="label">My Content</div>
       </NavLink>
 
       
