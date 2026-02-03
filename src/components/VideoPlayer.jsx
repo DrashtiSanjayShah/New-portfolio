@@ -15,6 +15,7 @@ const VideoPlayer = ({
           const container = document.querySelector(".videoPlayer-container");
           if (container) {
             container.style.display = "none";
+            // force reflow
             void container.offsetHeight;
             container.style.display = "flex";
           }
@@ -24,14 +25,17 @@ const VideoPlayer = ({
 
     document.addEventListener("fullscreenchange", handleFullscreenChange);
     return () => {
-      document.removeEventListener("fullscreenchange", handleFullscreenChange);
+      document.removeEventListener(
+        "fullscreenchange",
+        handleFullscreenChange
+      );
     };
   }, []);
 
   return (
     <div className="videoPlayer-container">
-      {/* Left */}
-      <div style={{ display: "flex", alignItems: "center" }}>
+      {/* Left side - Video */}
+      <div className="video-left">
         <video
           src={videoSrc}
           controls
@@ -41,7 +45,7 @@ const VideoPlayer = ({
         />
       </div>
 
-      {/* Right */}
+      {/* Right side - Content */}
       <div className="right-side-video">
         <h3>{title}</h3>
         <p>{description}</p>
@@ -67,19 +71,22 @@ const VideoPlayer = ({
       </div>
 
       {/* Buttons */}
-      <div className="button mobile-buttons">
-        {buttons.map((btn, index) => (
-          <a
-            key={index}
-            href={btn.link}
-            className="video-button"
-            target={btn.external ? "_blank" : "_self"}
-            rel="noopener noreferrer"
-          >
-            {btn.label}
-          </a>
-        ))}
-      </div>
+      {buttons.length > 0 && (
+        <div className="button mobile-buttons">
+          {buttons.map((btn, index) => (
+            <a
+              key={index}
+              href={btn.link}
+              className="video-button"
+              target={btn.external ? "_blank" : undefined}
+              rel={btn.external ? "noopener noreferrer" : undefined}
+              download={btn.download ? "" : undefined}
+            >
+              {btn.label}
+            </a>
+          ))}
+        </div>
+      )}
     </div>
   );
 };

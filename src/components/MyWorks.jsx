@@ -65,7 +65,7 @@ const MyWork = () => {
           title="Hi, I’m Drashti 👋"
           description="this is how i work."
           buttons={[
-            { label: "MY WORK", link: "/projects" },
+            { label: "MY WORK", link: "/freelance" },
             { label: "BOOK A CALL", link: "/contact" },
           ]}
           style={{ marginLeft: "-10rem" }}

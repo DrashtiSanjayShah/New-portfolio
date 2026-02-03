@@ -1,4 +1,4 @@
-.yt-loader {
+.loader {
   position: fixed;
   inset: 0;
   background-color: #0f0f0f;
@@ -8,25 +8,32 @@
   align-items: center;
   z-index: 9999;
 }
+.loader-screen {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.yt-loader-logo {
+.loader-logo {
   width: 14rem;
   margin-bottom: 1.5rem;
 }
 
-.yt-loader-bar-wrapper {
+.loader-bar-wrapper {
   display: flex;
   align-items: center;
   gap: 0.6rem;
 }
 
-.yt-loader-play {
+.loader-play {
   font-size: 1.2rem;
   color: white;
   opacity: 0.9;
 }
 
-.yt-loader-bar {
+.loader-bar {
   width: 240px;
   height: 4px;
   background: #ffffff33;
@@ -34,14 +41,14 @@
   overflow: hidden;
 }
 
-.yt-loader-progress {
+.loader-progress {
   height: 100%;
   width: 2%;
   background: red;
-  animation: yt-load 3.2s linear forwards;
+  animation: load 3.2s linear forwards;
 }
 
-@keyframes yt-load {
+@keyframes load {
   from {
     width: 0%;
   }

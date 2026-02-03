@@ -11,7 +11,8 @@ import Exam from "../assets/images/Exam.jpeg";
 import channelPhoto from "../assets/images/drashti-photo.png";
 import youtubeIntro from "../assets/videos/intro.mp4"
 import BottomNav from "./BottomNav";
-
+import Resume from "../assets/Resume.pdf";
+const resourceLink = "https://drive.google.com/file/d/1KY67ETEZ1-jeAA7KhY6bwu6KXPLyfvAL/view";
 
 
 const dummyData = [
@@ -93,8 +94,8 @@ const Videos = () => {
         title="Hi, I’m Drashti 👋"
         description="I build clean, conversion-focused websites for individuals and businesses."
         buttons={[
-          { label: "DOWNLOAD RESUME", link: "/projects" },
-          { label: "RESOURCES", link: "/contact" },
+          { label: "DOWNLOAD RESUME", link: Resume, download: true },
+          { label: "RESOURCES", link: resourceLink, external: true },
         ]}
       />
 

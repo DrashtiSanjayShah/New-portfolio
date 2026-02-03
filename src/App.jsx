@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
-
-import Loader from "./components/Loader";
 import Home from "./pages/Home";
+import Loader from "./components/Loader";
 import ContactForm from "./components/ContactForm";
 import ProfilePage from "./components/ProfilePage";
 import AchievementsPage from "./components/AchievementsPage";
@@ -13,18 +12,18 @@ import Channels from "./components/Channels";
 import MyWork from "./components/Videos";
 
 function App() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(() => {
+    return !sessionStorage.getItem("loaderShown");
+  });
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 3500); // 4 seconds loader
-
-    return () => clearTimeout(timer);
-  }, []);
+    if (loading) {
+      sessionStorage.setItem("loaderShown", "true");
+    }
+  }, [loading]);
 
   if (loading) {
-    return <Loader />;
+    return <Loader onFinish={() => setLoading(false)} />;
   }
 
   return (
