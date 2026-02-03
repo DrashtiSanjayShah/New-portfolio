@@ -18,7 +18,7 @@ dist-ssr
 !.vscode/extensions.json
 .idea
 .env
-intro.mp4
+src/assets/videos/
 .DS_Store
 *.suo
 *.ntvs*
