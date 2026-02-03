@@ -9,7 +9,10 @@ import placement from "../assets/images/placement.png";
 import Teaching from "../assets/images/Teaching.jpeg";
 import Exam from "../assets/images/Exam.jpeg";
 import channelPhoto from "../assets/images/drashti-photo.png";
+import youtubeIntro from "../assets/videos/intro.mp4"
 import BottomNav from "./BottomNav";
+
+
 
 const dummyData = [
   {
@@ -67,8 +70,6 @@ const dummyData = [
 ];
 
 const Videos = () => {
-  
-  const [hoveredIndex, setHoveredIndex] = useState(null);
   const rows = [];
   for (let i = 0; i < dummyData.length; i += 2) {
     rows.push(dummyData.slice(i, i + 2));
@@ -76,49 +77,60 @@ const Videos = () => {
 
   return (
     <>
-     <Header />
-     <VideoPlayer />
-    <Container className="videos">
-      {rows.map((rowItems, rowIndex) => (
-        <Row key={rowIndex} className="mb-4">
-          {rowItems.map((item, colIndex) => (
-            <Col key={colIndex} md={4}>
-              <Card
-                className="card"
-                onClick={() =>
-                  window.open(
-                    `https://www.youtube.com/watch?v=${item.id}`,
-                    "_blank"
-                  )
-                }
-              >
-                <Card.Img
-                  variant="top"
-                  src={item.thumbnail} loading="lazy"
-                  className="video-small-thumbnail"
-                />
-                <Card.Body>
-                  <div className="card-body" style={{ display: "flex" }}>
+      <Header />
 
-                    <img className="channel-photo" src={channelPhoto} />
-                    <Card.Title className="video-title">
-                      {item.title}
-                   
-                  <Card.Text className="video-details">
-                    {item.creator} . {item.views} . {item.time}
-                  </Card.Text>
-                   </Card.Title>
-                  </div>
-                </Card.Body>
-              </Card>
-            </Col>
-          ))}
-        </Row>
-      ))}
-    </Container>
-    <BottomNav />
+      <VideoPlayer
+      videoSrc={youtubeIntro}
+        title="Hi, I’m Drashti 👋"
+        description="I build clean, conversion-focused websites for individuals and businesses."
+        buttons={[
+          { label: "MY WORK", link: "/projects" },
+          { label: "BOOK A CALL", link: "/contact" },
+        ]}
+      />
+
+      <Container className="videos">
+        {rows.map((rowItems, rowIndex) => (
+          <Row key={rowIndex} className="mb-4">
+            {rowItems.map((item, colIndex) => (
+              <Col key={colIndex} md={6}>
+                <Card
+                  className="card"
+                  onClick={() =>
+                    window.open(
+                      `https://www.youtube.com/watch?v=${item.id}`,
+                      "_blank"
+                    )
+                  }
+                >
+                  <Card.Img
+                    variant="top"
+                    src={item.thumbnail}
+                    loading="lazy"
+                    className="video-small-thumbnail"
+                  />
+                  <Card.Body>
+                    <div className="card-body" style={{ display: "flex" }}>
+                      <img className="channel-photo" src={channelPhoto} />
+                      <Card.Title className="video-title">
+                        {item.title}
+                        <Card.Text className="video-details">
+                          {item.creator} · {item.views} · {item.time}
+                        </Card.Text>
+                      </Card.Title>
+                    </div>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+        ))}
+      </Container>
+
+      <BottomNav />
     </>
   );
 };
+
 
 export default Videos;

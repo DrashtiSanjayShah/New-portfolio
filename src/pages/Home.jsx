@@ -12,7 +12,7 @@ const Home = () => {
       <div className="content-wrap">
         <Header />
         <FilterBar />
-        <VideoPlayer />
+        {/* <VideoPlayer /> */}
         <Videos />
       </div>
       <BottomNav />

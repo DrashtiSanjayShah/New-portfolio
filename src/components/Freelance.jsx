@@ -11,20 +11,20 @@ const Freelance = () => {
     <Header />
     <div className="videoPlayer-container">
       {/* Left side */}
-      <div style={{ display: "flex", alignItems: "center" }}>
+      {/* <div style={{ display: "flex", alignItems: "center" }}>
         
         <video
-          // src={videoPlaceholder}
+          src={videoPlaceholder}
           controls
           autoPlay
           muted
           className="small-thumbnail rounded border bg-light"
         />
         
-      </div>
+      </div> */}
 
       {/* Right side */}
-      <div className="right-side-video">
+      {/* <div className="right-side-video">
         <a href='/fullvideo'
        style={{ color: "white", textDecoration: 'none', fontWeight: 'bold'}} >
         Introduction Video </a>
@@ -37,7 +37,7 @@ const Freelance = () => {
           BOOK A CALL
         </a>
       
-      </div>
+      </div> */}
     </div>
     <FreelanceProjects />
     <BottomNav />

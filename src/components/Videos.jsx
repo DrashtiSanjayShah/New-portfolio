@@ -7,18 +7,19 @@ import MoneyMontage from "../assets/images/MoneyMontage.png";
 import PerfectGym from "../assets/images/PerfectGym.png";
 import RichonAgro from "../assets/images/RichonAgro.png";
 import channelPhoto from "../assets/images/drashti-photo.png";
-
+import VideoPlayer from "./VideoPlayer";
+import youtubeIntro from "../assets/videos/intro.mp4"
 const dummyData = [
   {
     thumbnail: HeetWebsite,
     title: "Personal Portfolio Website (Design + Development)",
-    link: "https://famous-bublanina-d637d4.netlify.app"
+    link: "https://famous-bublanina-d637d4.netlify.app",
   },
-   {
+  {
     thumbnail: crossfit,
     title: "CrossFit Gym Website (High-Conversion Landing Page)",
-    link: "https://crossfit4-bhandup.netlify.app"
-   },
+    link: "https://crossfit4-bhandup.netlify.app",
+  },
   {
     thumbnail: PerfectGym,
     title: "Modern Gym Website for Local Fitness Center",
@@ -30,7 +31,7 @@ const dummyData = [
     title: "Corporate Website for Agro-Based Business",
     link: "https://dashing-clafoutis-0d996b.netlify.app",
   },
-    
+
   {
     thumbnail: BabyShower,
     title: "Themed Event Website – 1900s Baby Shower",
@@ -41,7 +42,6 @@ const dummyData = [
     title: "Corporate Finance Website (Trust-Focused Design)",
     link: "https://voluble-croissant-08a7fd.netlify.app",
   },
- 
 ];
 
 const Videos = () => {
@@ -51,6 +51,16 @@ const Videos = () => {
   }
 
   return (
+    <>
+    <VideoPlayer
+      videoSrc={youtubeIntro}
+        title="Hi, I’m Drashti 👋"
+        description="I build clean, conversion-focused websites for individuals and businesses."
+        buttons={[
+          { label: "DOWNLOAD RESUME", link: "" },
+          { label: "RESOURCES", link: "/contact" },
+        ]}
+      />
     <Container className="videos">
       {rows.map((rowItems, rowIndex) => (
         <Row key={rowIndex} className="mb-4">
@@ -62,20 +72,17 @@ const Videos = () => {
               >
                 <Card.Img
                   variant="top"
-                  src={item.thumbnail} loading="lazy"
+                  src={item.thumbnail}
+                  loading="lazy"
                   className="video-small-thumbnail"
                 />
                 <Card.Body>
                   <div className="card-body" style={{ display: "flex" }}>
-
                     <img className="channel-photo" src={channelPhoto} />
                     <Card.Title className="website-title">
                       {item.title}
-                   <Card.Text className="video-details">
-</Card.Text>
-
-                  
-                   </Card.Title>
+                      <Card.Text className="video-details"></Card.Text>
+                    </Card.Title>
                   </div>
                 </Card.Body>
               </Card>
@@ -84,6 +91,7 @@ const Videos = () => {
         </Row>
       ))}
     </Container>
+    </>
   );
 };
 

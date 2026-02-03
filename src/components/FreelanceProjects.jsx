@@ -4,7 +4,8 @@ import HeetWebsite from "../assets/images/Heet-website.png";
 import LinkedinClone from "../assets/images/linkedin.png";
 import MoneyMontage from "../assets/images/MoneyMontage.png";
 import Sagebhrigu from "../assets/images/sagebhrigu.png";
-
+import VideoPlayer from "./VideoPlayer";
+import youtubeIntro from "../assets/videos/intro.mp4"
 // Links to the work
 //Heet website (netlify): https://famous-bublanina-d637d4.netlify.app
 //sageBhrigu (netlify): https://starlit-manatee-7c9f3f.netlify.app
@@ -46,6 +47,15 @@ const FreelaneProjects = () => {
   }
 
   return (
+    <>
+    <VideoPlayer
+      videoSrc={youtubeIntro}
+        title="Hi, I’m Drashti 👋"
+        description="I build clean, conversion-focused websites for individuals and businesses."
+        buttons={[
+          { label: "BOOK A CALL", link: "/contact" },
+        ]}
+      />
     <Container className="videos">
       {rows.map((rowItems, rowIndex) => (
         <Row key={rowIndex} className="mb-4">
@@ -85,6 +95,7 @@ const FreelaneProjects = () => {
         </Row>
       ))}
     </Container>
+    </>
   );
 };
 
