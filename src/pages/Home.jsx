@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import FilterBar from "../components/FilterBar";
 import VideoPlayer from "../components/VideoPlayer";
-import Videos from "../components/Videos";
+import Videos from "../components/MyWorks";
 import BottomNav from "../components/BottomNav";
 import "../App.css"; // if you store global layout css there
 

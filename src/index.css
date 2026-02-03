@@ -95,7 +95,66 @@ body {
   cursor: pointer;
 }
 
+/* testimonial section */
+.yt-testimonial {
+  padding: 2.8rem 1rem 3.2rem;
+  background: transparent;
+}
 
+.yt-testimonial__wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.6rem 1.8rem;
+  border-radius: 14px;
+  background: #181818;
+  border: 1px solid #2a2a2a;
+}
+
+.yt-testimonial__pin {
+  display: inline-block;
+  font-size: 0.72rem;
+  color: #aaa;
+  margin-bottom: 0.6rem;
+}
+
+.yt-testimonial__text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #f1f1f1;
+  margin-bottom: 1.1rem;
+}
+
+.yt-testimonial__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.yt-testimonial__author strong {
+  display: block;
+  font-size: 0.85rem;
+  color: #ffffff;
+}
+
+.yt-testimonial__author span {
+  font-size: 0.75rem;
+  color: #9a9a9a;
+}
+
+.yt-testimonial__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.yt-testimonial__chips span {
+  font-size: 0.7rem;
+  padding: 0.28rem 0.65rem;
+  border-radius: 999px;
+  background: #202020;
+  color: #dcdcdc;
+  border: 1px solid #2e2e2e;
+}
 /* Video card */
 .small-thumbnail {
   width: 480px;
@@ -107,11 +166,19 @@ body {
   display: flex;
   gap: 20px;
   align-items: center;
-  margin-left:  -33rem;
   padding-top: 7rem;
   font-size: 2rem;
   cursor: pointer;
 }
+
+.page-videos .mobile-buttons {
+  margin-left: -10rem;
+}
+
+.page-work .mobile-buttons {
+  margin-left: -33rem;
+}
+
 
 .video-button {
   font-size: 0.75rem;

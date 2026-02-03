@@ -25,40 +25,46 @@ import VJTI from '../assets/images/VJTI.jpg';
 import golden_badge from '../assets/images/gold_badge.png'
 const achievements = [
    {
-    title: "MLSA",
+    title: "Microsoft Learn Student Ambassador (MLSA)",
+    tags: ["Community Building", "Technical Education", "Leadership" ],
     description:
-      "During my engineering, I signed up to become a Microsoft Learn Student Ambassador. This decision led me to host 5+ sessions with over 300 participants. I have always loved teaching, and being an MLSA gave me the opportunity to interact with students from different nationalities and build a strong community.",
+      ["As a Microsoft Learn Student Ambassador, I led and hosted 5+ technical sessions attended by 300+ students across different backgrounds and nationalities.This role allowed me to combine my love for teaching with technology - building an engaged learning community while strengthening my skills in public speaking, mentorship, and technical communication."],
     images: [MLSA1, MLSA2, MLSA3, MLSA4],
   },
   {
-    title: "CGPA: 9.43",
+    title: "Educational Impact through Beacon",
+    tags:["Mentorship", "Social Impact" , "Web Education"],
     description:
-      "I am proud to share that my average CGPA over the four years of engineering is 9.54. Admittedly, achieving a high score like this was challenging, especially since the first year was entirely online, and we were still getting the hang of understanding core concepts without a single offline class.",
-    images: [Grad, Grad2],
-  },
-    {
-    title: "Beacon",
-    description:
-      "I carried my passion for teaching from MLSA to Beacon. Under this program, I had the opportunity to impact the lives of 15 underprivileged students by teaching them the basics of web design. What makes me incredibly happy is that three of them now have jobs as junior web designers.",
+      "Through the Beacon initiative, I taught the fundamentals of web design to 15 underprivileged students.The most meaningful outcome: three students transitioned into junior web designer roles, validating the real-world impact of accessible technical education.",
     images: [Beacon_letter, beacon, Beacon2],
   },
-  {
+    {
     title: "Speaker at VJTI Mumbai",
+    tags: ["Public Speaking" , "Knowledge Sharing"],
     description:
-      "I had the immense privilege of sharing my knowledge about Blockchain at {event name}, hosted by {organization name} at VJTI College of Engineering. I spoke to an audience of over 100 college students and had an amazing experience.",
+      "I was invited to speak on Blockchain fundamentals at an event hosted at Veermata Jijabai Technological Institute (VJTI), Mumbai. Addressing an audience of 100+ college students, I focused on simplifying complex concepts and encouraging students to explore emerging technologies with confidence.",
     images: [VJTI,VJTI1],
   },
   {
-    title: "Marathon Runner",
+    title: "Academic Excellence in Engineering",
+    tags: ["Consistency" , "Discipline"],
     description:
-      "What began as a stress-reliever quickly turned into a passion. I’ve run in several 5KM and 10KM events, and the high of crossing the finish line never gets old — it's a reminder of both discipline and joy.",
-    images: [Run, Run2, Run3],
+      "I graduated with a CGPA of 9.43, reflecting consistent academic performance across four years of engineering. Navigating a fully online first year strengthened my ability to learn independently, adapt quickly, and build strong conceptual foundations without traditional classroom support.",
+    images: [Grad, Grad2]
+  },
+  {
+    title: "Recognized Voice in Web Development (LinkedIn)",
+    tags: ["Content Creation" , "Thought Leadership"],
+    description:
+      "I actively share insights and learnings in web development on LinkedIn, where my contributions were recognized with the “Top Web Development Voice” badge. Writing has become an extension of my teaching—helping others learn while sharpening my own understanding.",
+    images: [ golden_badge],
   },
       {
-    title: "CGPA: 9.43",
+    title: "Endurance Running & Discipline",
+    tags: ["Consistency" , "Mental Strength" , "Balance"],
     description:
-      "I write regularly on LinkedIn, and my contributions to the web development space were recognized with the 'Top Web Development Voice' badge.",
-    images: [golden_badge],
+      "Long-distance running started as a way to manage stress and evolved into a practice of discipline and mental resilience.Having completed multiple 5km and 10km runs, I bring the same consistency and perseverance to my professional work.",
+    images: [Run, Run2, Run3],
   },
 
 ];
