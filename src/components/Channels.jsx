@@ -61,12 +61,14 @@ const Videos = () => {
                 <Card className="card">
                   <Card.Body>
                     <div className="channel-card-body">
+                      
                       <img className="channel-photo-fav" src={item.thumbnail} />
                       <Card.Title className="channel-name">
                         {item.title}
 
                         <Card.Text className="yt-details">
                           {item.text}
+                          
                         </Card.Text>
                       </Card.Title>
                     </div>

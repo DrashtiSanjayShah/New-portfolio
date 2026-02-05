@@ -49,7 +49,7 @@ const achievements = [
     title: "Academic Excellence in Engineering",
     tags: ["Consistency" , "Discipline"],
     description:
-      "I graduated with a CGPA of 9.43, reflecting consistent academic performance across four years of engineering. Navigating a fully online first year strengthened my ability to learn independently, adapt quickly, and build strong conceptual foundations without traditional classroom support.",
+      "I graduated with a CGPA of 9.57, reflecting consistent academic performance across four years of engineering. Navigating a fully online first year strengthened my ability to learn independently, adapt quickly, and build strong conceptual foundations without traditional classroom support.",
     images: [Grad, Grad2]
   },
   {

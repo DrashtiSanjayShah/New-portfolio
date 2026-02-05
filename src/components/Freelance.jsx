@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import Header from './Header';
 import BottomNav from './BottomNav';
-import FreelanceProjects from './FreelanceProjects';
+// import FreelanceProjects from './FreelanceProjects';
+import MyWork from "./MyWorks";
 
 
 const Freelance = () => {
@@ -39,7 +40,7 @@ const Freelance = () => {
       
       </div> */}
     </div>
-    <FreelanceProjects />
+    <MyWork />
     <BottomNav />
     </>
   );

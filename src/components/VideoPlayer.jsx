@@ -15,8 +15,7 @@ const VideoPlayer = ({
           const container = document.querySelector(".videoPlayer-container");
           if (container) {
             container.style.display = "none";
-            // force reflow
-            void container.offsetHeight;
+            void container.offsetHeight; // force reflow
             container.style.display = "flex";
           }
         }, 100);
@@ -25,12 +24,17 @@ const VideoPlayer = ({
 
     document.addEventListener("fullscreenchange", handleFullscreenChange);
     return () => {
-      document.removeEventListener(
-        "fullscreenchange",
-        handleFullscreenChange
-      );
+      document.removeEventListener("fullscreenchange", handleFullscreenChange);
     };
   }, []);
+
+  const handleButtonClick = (e, btn) => {
+    if (btn.scrollTo) {
+      e.preventDefault();
+      const section = document.getElementById(btn.scrollTo);
+      section?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div className="videoPlayer-container">
@@ -76,8 +80,9 @@ const VideoPlayer = ({
           {buttons.map((btn, index) => (
             <a
               key={index}
-              href={btn.link}
+              href={btn.link || "#"}
               className="video-button"
+              onClick={(e) => handleButtonClick(e, btn)}
               target={btn.external ? "_blank" : undefined}
               rel={btn.external ? "noopener noreferrer" : undefined}
               download={btn.download ? "" : undefined}

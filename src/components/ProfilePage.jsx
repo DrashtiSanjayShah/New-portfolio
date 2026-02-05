@@ -5,13 +5,13 @@ import BottomNav from "./BottomNav";
 
 const qualifications = [
   "5+ years of hands-on experience in modern web development",
-  "Known for making complex tech feel simple",
+  "Freelance developer for clients across education and small business industries",
+  "Focus on clean UI, performance, and user-first design",
+  "Making complex tech feel simple",
+  "Delivered invited talks and workshops at academic and tech forums",
   "Bachelor’s in Information Technology (CGPA: 9.57)",
   "Led technical training sessions with more than 400+ participants",
-  "Freelance developer for clients across education and small business sectors",
-  "Delivered invited talks and workshops at academic and tech forums",
   "Skilled in HTML, CSS, JavaScript, React, Tailwind, and Git workflows",
-  "Focus on clean UI, performance, and user-first design",
 ];
 
 const ProfilePage = () => {

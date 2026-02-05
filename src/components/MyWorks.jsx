@@ -1,4 +1,4 @@
-import {React, useEffect} from "react";
+import { React, useEffect } from "react";
 import { Card, Row, Col, Container } from "react-bootstrap";
 import HeetWebsite from "../assets/images/HeetWebsiteimg.png";
 import crossfit from "../assets/images/CrossFit.png";
@@ -6,9 +6,10 @@ import BabyShower from "../assets/images/BabyShower.png";
 import MoneyMontage from "../assets/images/MoneyMontage.png";
 import PerfectGym from "../assets/images/PerfectGym.png";
 import RichonAgro from "../assets/images/RichonAgro.png";
-import channelPhoto from "../assets/images/drashti-photo.png";
+import channelPhoto from "../assets/images/heet.jpg";
 import VideoPlayer from "./VideoPlayer";
 import youtubeIntro from "../assets/videos/intro.mp4";
+import { TiPin } from "react-icons/ti";
 const dummyData = [
   {
     thumbnail: HeetWebsite,
@@ -50,29 +51,32 @@ const MyWork = () => {
     rows.push(dummyData.slice(i, i + 2));
   }
 
-    useEffect(() => {
-      document.body.classList.add("page-videos");
+  useEffect(() => {
+    document.body.classList.add("page-videos");
 
-      return () => {
-        document.body.classList.remove("page-videos");
-      };
-    }, []);
+    return () => {
+      document.body.classList.remove("page-videos");
+    };
+  }, []);
 
-    return (
-      <>
-        <VideoPlayer
-          videoSrc={youtubeIntro}
-          title="Hi, I’m Drashti 👋"
-          description="this is how i work."
-          buttons={[
-            { label: "MY WORK", link: "/freelance" },
-            { label: "BOOK A CALL", link: "/contact" },
-          ]}
-          style={{ marginLeft: "-10rem" }}
-        />
-        <section className="yt-testimonial">
+  return (
+    <>
+      <VideoPlayer
+        videoSrc={youtubeIntro}
+        title="Hi, I’m Drashti 👋"
+        description="this is how i work."
+        buttons={[
+          { label: "MY WORK", scrollTo: "my-projects" },
+          { label: "BOOK A CALL", link: "/contact" },
+        ]}
+        style={{ marginLeft: "-10rem" }}
+      />
+      <section className="yt-testimonial">
+        <a href="https://www.linkedin.com/in/drashtisanjayshah/">
           <div className="yt-testimonial__wrapper">
-            <span className="yt-testimonial__pin">📌 Pinned Comment</span>
+            <span className="yt-testimonial__pin">
+              <TiPin /> Pinned Comment
+            </span>
 
             <p className="yt-testimonial__text">
               I highly recommend Drashti for her incredible talent and
@@ -84,53 +88,59 @@ const MyWork = () => {
 
             <div className="yt-testimonial__footer">
               <div className="yt-testimonial__author">
-                <strong>Heet Gudhka</strong>
-                <span>Front-End Developer · Client</span>
+                <img
+                  className="channel-photo"
+                  src={channelPhoto}
+                  alt="Channel"
+                />
+                <div className="yt-testimonial__author-text">
+                  <strong>Heet Gudhka</strong>
+                  <span>Front-End Developer · Client</span>
+                </div>
               </div>
-
               <div className="yt-testimonial__chips">
-                <span>Web Development</span>
                 <span>Client Work</span>
+                <span>Web Development</span>
+
                 <span>UI/UX</span>
-                <span>Professionalism</span>
               </div>
             </div>
           </div>
-        </section>
+        </a>
+      </section>
 
-        <Container className="videos">
-          {rows.map((rowItems, rowIndex) => (
-            <Row key={rowIndex} className="mb-4">
-              {rowItems.map((item, colIndex) => (
-                <Col key={colIndex} md={4}>
-                  <Card
-                    className="card"
-                    onClick={() => window.open(item.link, "_blank")}
-                  >
-                    <Card.Img
-                      variant="top"
-                      src={item.thumbnail}
-                      loading="lazy"
-                      className="video-small-thumbnail"
-                    />
-                    <Card.Body>
-                      <div className="card-body" style={{ display: "flex" }}>
-                        <img className="channel-photo" src={channelPhoto} />
-                        <Card.Title className="website-title">
-                          {item.title}
-                          <Card.Text className="video-details"></Card.Text>
-                        </Card.Title>
-                      </div>
-                    </Card.Body>
-                  </Card>
-                </Col>
-              ))}
-            </Row>
-          ))}
-        </Container>
-      </>
-    );
-  };
-
+      <Container className="videos" id="my-projects">
+        {rows.map((rowItems, rowIndex) => (
+          <Row key={rowIndex} className="mb-4">
+            {rowItems.map((item, colIndex) => (
+              <Col key={colIndex} md={4}>
+                <Card
+                  className="card"
+                  onClick={() => window.open(item.link, "_blank")}
+                >
+                  <Card.Img
+                    variant="top"
+                    src={item.thumbnail}
+                    loading="lazy"
+                    className="website-small-thumbnail"
+                  />
+                  <Card.Body>
+                    <div className="card-body" style={{ display: "flex" }}>
+                      <img className="channel-photo" src={channelPhoto} />
+                      <Card.Title className="website-title">
+                        {item.title}
+                        <Card.Text className="video-details"></Card.Text>
+                      </Card.Title>
+                    </div>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+        ))}
+      </Container>
+    </>
+  );
+};
 
 export default MyWork;

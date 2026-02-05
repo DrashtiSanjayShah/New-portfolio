@@ -96,23 +96,21 @@ body {
 }
 
 /* testimonial section */
-.yt-testimonial {
-  padding: 2.8rem 1rem 3.2rem;
-  background: transparent;
-}
+
 
 .yt-testimonial__wrapper {
-  max-width: 960px;
-  margin: 0 auto;
+  /* width: 87rem; */
+  margin: 0 1rem;
   padding: 1.6rem 1.8rem;
   border-radius: 14px;
-  background: #181818;
+  /* background: #181818; */
   border: 1px solid #2a2a2a;
+  cursor: pointer; 
 }
 
 .yt-testimonial__pin {
   display: inline-block;
-  font-size: 0.72rem;
+  font-size: 1rem;
   color: #aaa;
   margin-bottom: 0.6rem;
 }
@@ -130,15 +128,34 @@ body {
   gap: 0.8rem;
 }
 
-.yt-testimonial__author strong {
-  display: block;
-  font-size: 0.85rem;
-  color: #ffffff;
+.yt-testimonial__author{
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-.yt-testimonial__author span {
-  font-size: 0.75rem;
-  color: #9a9a9a;
+.yt-testimonial__author .channel-photo {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.yt-testimonial__author-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  margin-top: 1rem;
+}
+
+.yt-testimonial__author-text strong {
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+.yt-testimonial__author-text span {
+  font-size: 0.8rem;
+  color: #aaa;
 }
 
 .yt-testimonial__chips {
@@ -210,7 +227,7 @@ body {
   width: 440px;
   height: 247px;
   border-radius: 8px;
-  object-fit: contain;
+  object-fit: cover;
   object-position: left center;
 }
 
