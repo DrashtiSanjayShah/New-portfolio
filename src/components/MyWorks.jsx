@@ -126,7 +126,7 @@ const MyWork = () => {
                   />
                   <Card.Body>
                     <div className="card-body" style={{ display: "flex" }}>
-                      <img className="channel-photo" src={channelPhoto} />
+                      {/* <img className="channel-photo" src={channelPhoto} /> */}
                       <Card.Title className="website-title">
                         {item.title}
                         <Card.Text className="video-details"></Card.Text>
