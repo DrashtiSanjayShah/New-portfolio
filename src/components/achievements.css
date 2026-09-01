@@ -93,4 +93,8 @@
   .achievement-content h3 {
     font-size: 1.1rem;
   }
+
+  .achievement-right-side-video h3 {
+    font-size: 1rem;
+  }
 }
