@@ -217,15 +217,15 @@ body {
 
 .video-small-thumbnail {
   display: flex;
-  width: 440px;
-  height: 247px;
+  width: 100%;
+  height: auto;
   border-radius: 8px;
   object-fit: cover;
 }
 .website-small-thumbnail {
   display: flex;
-  width: 440px;
-  height: 247px;
+  width: 100%;
+    height: auto;
   border-radius: 8px;
   object-fit: cover;
   object-position: left center;
@@ -472,7 +472,7 @@ button {
   transition: background-color 0.3s ease;
   margin-bottom: 0; /* prevent margin collapse */
   font-size: 1rem;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
 }
 
 .contact-form-container h2 {
@@ -543,6 +543,7 @@ button:hover {
 
   form {
     margin-bottom: 1rem;
+    margin-left: 1rem; 
   }
 }
 
@@ -581,9 +582,9 @@ button:hover {
     height: auto;
   }
 
-  .card-body {
-    margin: 0.5rem;
-  }
+  /* .card-body {
+    margin: 1rem;
+  } */
 
   .filter-bar {
     overflow-x: auto;
@@ -647,6 +648,7 @@ button:hover {
     font-size: 1rem;
     margin: 0rem;
   }
+
   .small-thumbnail {
     width: 100%;
     max-height: auto;
@@ -695,6 +697,10 @@ button:hover {
 
   .label {
     font-size: 0.6rem;
+  }
+
+  form{
+    margin-left: 1rem;
   }
 }
 
