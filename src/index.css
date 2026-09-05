@@ -606,6 +606,18 @@ button:hover {
     margin-bottom: 0rem;
   }
 
+  .mobile-buttons,
+  .page-videos .mobile-buttons,
+  .page-work .mobile-buttons {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+  }
+  
   .hero-section{
     margin: 1rem 0rem;
   }
